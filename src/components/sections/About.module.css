@@ -1,0 +1,218 @@
+/* About — Blanco con waves lima y texto CEO en monospace */
+
+.about {
+  position: relative;
+  background: var(--white);
+  overflow: hidden;
+  padding: 0 0 0 0;
+}
+
+/* ── Waves decorativas ── */
+.waveTop {
+  width: 100%;
+  height: 110px;
+  margin-bottom: -1px;
+  display: block;
+}
+
+.waveTop svg,
+.waveBottom svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.waveBottom {
+  width: 100%;
+  height: 110px;
+  margin-top: 32px;
+  display: block;
+}
+
+/* ── Chevron central ── */
+.centerChevron {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 40px;
+}
+
+/* ── CEO Intro: texto izq + foto der ── */
+.heroIntro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  padding: 0 0 56px;
+}
+
+.introText {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ceoPhoto {
+  order: 2;
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Fuente monospace para el texto del CEO */
+.ceoGreeting {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(1rem, 2.2vw, 1.3rem);
+  font-weight: 400;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.ceoGreeting strong {
+  font-weight: 700;
+}
+
+.ceoDesc {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  font-weight: 400;
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+.ceoDesc em {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.ceoWelcome {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+/* ── Separador ── */
+.separator {
+  border-top: 2px solid var(--gray-200);
+  padding-top: 48px;
+  margin-bottom: 40px;
+}
+
+.sectionHeading {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+/* ── Cards Misión / Visión / Valores / Únete ── */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 56px;
+}
+
+.card {
+  padding: 28px;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: var(--lime);
+  box-shadow: 0 4px 20px rgba(207,224,0,0.25);
+  transform: translateY(-2px);
+}
+
+.cardIcon {
+  width: 44px;
+  height: 44px;
+  background: var(--lime);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+  flex-shrink: 0;
+}
+
+.cardTitle {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.cardText {
+  font-size: 0.88rem;
+  color: var(--dark-3);
+  line-height: 1.7;
+}
+
+/* ── Nav grid: Organigrama / Team / Servicios / Contacto ── */
+.navGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.navCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.25s, transform 0.25s var(--ease-out);
+}
+
+.navCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.navCardImg {
+  height: 160px;
+  position: relative;
+}
+
+.navCardLabel {
+  background: var(--lime);
+  color: var(--dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 14px;
+  transition: background 0.2s;
+}
+
+.navCard:hover .navCardLabel {
+  background: var(--lime-dark);
+  color: var(--white);
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .heroIntro { grid-template-columns: 1fr; gap: 40px; }
+  .ceoPhoto { height: 320px; order: 1; }
+  .introText { order: 2; }
+  .navGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .cards { grid-template-columns: 1fr; }
+  .navGrid { grid-template-columns: 1fr; }
+}

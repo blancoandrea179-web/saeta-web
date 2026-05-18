@@ -1,0 +1,150 @@
+/* Hero — Lima como fondo dominante, igual al sitio real */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--lime);
+  overflow: hidden;
+}
+
+/* ── Bloque superior: LIMA puro ── */
+.videoBlock {
+  position: relative;
+  height: 45vh;
+  min-height: 320px;
+  background: var(--lime);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.videoBg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+}
+
+/* Ícono pausa centrado */
+.pauseIcon {
+  position: relative;
+  z-index: 2;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid rgba(42,42,42,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.pauseIcon:hover {
+  border-color: var(--dark);
+  transform: scale(1.06);
+}
+
+.pauseBar {
+  width: 5px;
+  height: 22px;
+  background: var(--dark);
+  border-radius: 3px;
+  opacity: 0.7;
+}
+
+/* ── Bloque inferior: foto + idiomas ── */
+.lowerBlock {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.photoBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.photoOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    rgba(42,42,42,0.65) 0%,
+    rgba(42,42,42,0.40) 50%,
+    rgba(42,42,42,0.30) 100%
+  );
+}
+
+/* Texto SAETA fantasma más visible y más grande */
+.bgText {
+  position: absolute;
+  bottom: 20px;
+  left: -20px;
+  z-index: 1;
+  font-size: clamp(7rem, 22vw, 18rem);
+  font-weight: 900;
+  color: rgba(255,255,255,0.12);
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: var(--font-sans);
+  user-select: none;
+}
+
+/* ── Banderas de idiomas centradas ── */
+.langRow {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(40px, 8vw, 120px);
+  height: 100%;
+  padding: 40px 24px;
+}
+
+.langItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: transform 0.2s var(--ease-out);
+  text-decoration: none;
+}
+
+.langItem:hover { transform: translateY(-4px); }
+
+.flag {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.langName {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .videoBlock { height: 40vh; min-height: 260px; }
+  .flag { width: 48px; height: 48px; font-size: 2.5rem; }
+  .langRow { gap: 24px; }
+}

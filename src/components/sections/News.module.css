@@ -1,0 +1,219 @@
+.news { background: var(--white); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ── News cards grid ── */
+.newsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 24px;
+}
+
+/* Featured card spans full width */
+.featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.featured .cardImg { border-radius: var(--radius-lg) 0 0 var(--radius-lg); }
+.featured .cardBody { padding: 36px; }
+
+.card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--gray-100);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.25s, transform 0.25s var(--ease-out);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.cardImg {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.featured .cardImg { height: auto; }
+
+.cardTag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--lime);
+  color: var(--navy-dark);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cardBody {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.cardDate {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.4;
+}
+
+.featured .cardTitle { font-size: 1.25rem; }
+
+.cardExcerpt {
+  font-size: 0.88rem;
+  color: var(--gray-500);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.readMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-top: auto;
+  padding: 0;
+  transition: color 0.2s, gap 0.2s;
+}
+
+.readMore:hover { color: var(--lime-hover); gap: 10px; }
+
+/* ── Sidebar ── */
+.sidebar {
+  background: var(--off-white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  border-top: 4px solid var(--lime);
+}
+
+.sidebarTitle {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+.eventsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.event:last-child { border-bottom: none; padding-bottom: 0; }
+
+.eventDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 44px;
+  background: var(--navy);
+  border-radius: var(--radius-sm);
+  padding: 8px 4px;
+  flex-shrink: 0;
+}
+
+.eventDay {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--lime);
+  line-height: 1;
+}
+
+.eventMonth {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+
+.eventTitle {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.35;
+  margin-bottom: 4px;
+}
+
+.eventDesc {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+.sidebarCta {
+  width: 100%;
+  justify-content: center;
+  margin-top: 28px;
+  font-size: 0.8rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { order: -1; }
+}
+
+@media (max-width: 700px) {
+  .newsGrid { grid-template-columns: 1fr; }
+  .featured { display: flex; flex-direction: column; }
+  .featured .cardImg { height: 200px; border-radius: 0; }
+}

@@ -2,7 +2,7 @@ import styles from './Languages.module.css'
 
 const languages = [
   {
-    flag: '🇲🇽',
+    flag: 'https://flagcdn.com/mx.svg',
     code: 'ES',
     lang: 'Español',
     label: 'Principal',
@@ -10,7 +10,7 @@ const languages = [
     href: '#',
   },
   {
-    flag: '🇺🇸',
+    flag: 'https://flagcdn.com/us.svg',
     code: 'EN',
     lang: 'English',
     label: 'International',
@@ -18,7 +18,7 @@ const languages = [
     href: '#',
   },
   {
-    flag: '🇩🇪',
+    flag: 'https://flagcdn.com/de.svg',
     code: 'DE',
     lang: 'Deutsch',
     label: 'International',
@@ -48,7 +48,7 @@ export default function Languages() {
             <a key={l.code} href={l.href} className={styles.card}>
               {/* Flag & badge */}
               <div className={styles.cardTop}>
-                <span className={styles.flag}>{l.flag}</span>
+                <img src={l.flag} alt={l.lang} width={48} height={36} style={{ borderRadius: '4px', objectFit: 'cover' }} />
                 <span className={styles.badge}>{l.label}</span>
               </div>
               {/* Code & name */}

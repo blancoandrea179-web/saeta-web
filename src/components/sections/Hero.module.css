@@ -1,5 +1,3 @@
-/* Hero — Lima como fondo dominante, igual al sitio real */
-
 .hero {
   position: relative;
   min-height: 100vh;
@@ -9,7 +7,6 @@
   overflow: hidden;
 }
 
-/* ── Bloque superior: LIMA puro ── */
 .videoBlock {
   position: relative;
   height: 45vh;
@@ -27,7 +24,6 @@
   opacity: 0.15;
 }
 
-/* Ícono pausa centrado */
 .pauseIcon {
   position: relative;
   z-index: 2;
@@ -56,7 +52,6 @@
   opacity: 0.7;
 }
 
-/* ── Bloque inferior: foto + idiomas ── */
 .lowerBlock {
   position: relative;
   flex: 1;
@@ -81,7 +76,6 @@
   );
 }
 
-/* Texto SAETA fantasma más visible y más grande */
 .bgText {
   position: absolute;
   bottom: 20px;
@@ -97,7 +91,6 @@
   user-select: none;
 }
 
-/* ── Banderas de idiomas centradas ── */
 .langRow {
   position: relative;
   z-index: 3;
@@ -120,18 +113,19 @@
 
 .langItem:hover { transform: translateY(-4px); }
 
-.flag {
+.flagCircle {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   overflow: hidden;
-  font-size: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   flex-shrink: 0;
-  line-height: 1;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+}
+
+.flagCircle svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .langName {
@@ -142,9 +136,8 @@
   text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
-/* ── Responsive ── */
 @media (max-width: 640px) {
   .videoBlock { height: 40vh; min-height: 260px; }
-  .flag { width: 48px; height: 48px; font-size: 2.5rem; }
+  .flagCircle { width: 48px; height: 48px; }
   .langRow { gap: 24px; }
 }

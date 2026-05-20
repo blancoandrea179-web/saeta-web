@@ -8,6 +8,7 @@ import News from '@/components/sections/News'
 import Languages from '@/components/sections/Languages'
 import Contact from '@/components/sections/Contact'
 import Footer from '@/components/layout/Footer'
+import SocialButton from '@/components/ui/WhatsAppButton'
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <SocialButton />
     </>
   )
 }

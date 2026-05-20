@@ -147,7 +147,7 @@
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 32px 24px;
   }
 

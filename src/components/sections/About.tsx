@@ -56,11 +56,13 @@ export default function About() {
           </div>
 
           <div className={styles.ceoPhoto}>
-            <div className="img-placeholder" style={{ width: '100%', height: '100%', borderRadius: '16px' }}>
-              <span>FOTO CEO — 500×600</span>
-            </div>
+            <img
+              src="/images/daniela-nebel.jpg"
+              alt="Daniela Nebel — Fundadora & CEO de SAETA"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+            />
           </div>
-        </div>
+        </div>  
 
         <div className={styles.separator}>
           <h2 className={styles.sectionHeading}>DESCOMPLICANDO LOS PROCESOS...</h2>

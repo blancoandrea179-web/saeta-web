@@ -9,7 +9,6 @@ export default function Icon() {
       <div style={{
         width: 32,
         height: 32,
-        background: '#cfe000',
         borderRadius: 6,
         display: 'flex',
         alignItems: 'center',

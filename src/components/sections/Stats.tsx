@@ -1,10 +1,10 @@
 import styles from './Stats.module.css'
 
 const stats = [
-  { value: '+300', label: 'Clientes satisfechos', sub: 'empresas nacionales e internacionales' },
-  { value: '+10',  label: 'Años de experiencia', sub: 'en consultoría corporativa' },
-  { value: '3',    label: 'Países de presencia', sub: 'México, Alemania y EE.UU.' },
-  { value: '6',    label: 'Áreas de servicio', sub: 'bajo un mismo techo' },
+  { value: '+60', label: 'Clientes satisfechos', sub: 'empresas nacionales e internacionales' },
+  { value: '+5',  label: 'Años de experiencia', sub: 'en consultoría corporativa' },
+  { value: '2',    label: 'Oficinas en México', sub: 'Puebla y CDMX' },
+  { value: '7',    label: 'Áreas de servicio', sub: 'bajo un mismo techo' },
 ]
 
 export default function Stats() {

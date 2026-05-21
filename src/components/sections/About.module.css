@@ -54,7 +54,7 @@
 
 .ceoPhoto {
   order: 2;
-  height: 420px;
+  aspect-ratio: 3 / 4;
   position: relative;
   overflow: hidden;
   border-radius: 16px;
@@ -207,7 +207,7 @@
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .heroIntro { grid-template-columns: 1fr; gap: 40px; }
-  .ceoPhoto { height: 320px; order: 1; }
+  .ceoPhoto { aspect-ratio: 4 / 3; order: 1; }
   .introText { order: 2; }
   .navGrid { grid-template-columns: repeat(2, 1fr); }
 }

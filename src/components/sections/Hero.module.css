@@ -164,3 +164,12 @@
     font-size: 1.1rem;
   }
 }
+
+  .langRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(40px, 8vw, 120px);
+    padding: 40px 24px;
+    background: var(--dark);
+  }

@@ -12,12 +12,8 @@ export default function Hero() {
           muted
           loop
           playsInline
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
         />
-        <div className={styles.pauseIcon}>
-          <div className={styles.pauseBar} />
-          <div className={styles.pauseBar} />
-        </div>
       </div>
 
       <div className={styles.lowerBlock}>

@@ -7,7 +7,7 @@ export default function Hero() {
       <div className={styles.videoBlock}>
         <video
           className={styles.videoBg}
-          src="/images/SAETA-Intro-2.MOV"
+          src="/images/SAETA-Intro 2.mp4"
           autoPlay
           muted
           loop

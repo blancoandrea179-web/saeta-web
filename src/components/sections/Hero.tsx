@@ -5,11 +5,15 @@ export default function Hero() {
     <section id="inicio" className={styles.hero}>
 
       <div className={styles.videoBlock}>
-        <div className={styles.videoBg}>
-          <div className="img-placeholder" style={{ width: '100%', height: '100%' }}>
-            <span>VIDEO / IMAGEN HERO — 1920×1080</span>
-          </div>
-        </div>
+        <video
+          className={styles.videoBg}
+          src="/images/SAETA-Intro 2.MOV"
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        />
         <div className={styles.pauseIcon}>
           <div className={styles.pauseBar} />
           <div className={styles.pauseBar} />

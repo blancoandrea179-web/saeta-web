@@ -7,13 +7,20 @@ import { Send, Phone, Mail, MapPin, CheckCircle } from 'lucide-react'
 export default function Contact() {
   const [form, setForm] = useState({ nombre: '', empresa: '', email: '', telefono: '', servicio: '', mensaje: '' })
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value })
+    setError('')
   }
 
   const handleSubmit = async (e: React.MouseEvent) => {
     e.preventDefault()
+    const { nombre, empresa, email, telefono, servicio, mensaje } = form
+    if (!nombre || !empresa || !email || !telefono || !servicio || !mensaje) {
+      setError('Por favor completa todos los campos antes de enviar.')
+      return
+    }
     await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -39,8 +46,8 @@ export default function Contact() {
 
             <div className={styles.contacts}>
               {[
-                { icon: Phone,  label: 'Teléfono', value: '+52 222 533 9586',        href: 'tel:+522225339586' },
-                { icon: Mail,   label: 'Correo',   value: 'contacto@saetaoc.com',    href: 'mailto:contacto@saetaoc.com' },
+                { icon: Phone,  label: 'Teléfono', value: '+52 222 533 9586', href: 'tel:+522225339586' },
+                { icon: Mail,   label: 'Correo',   value: 'contacto@saetaoc.com', href: 'mailto:contacto@saetaoc.com' },
                 { icon: MapPin, label: 'Puebla',   value: 'Corporativo Alsur Av. Atlixcayotl 6518 Int. 8 Col. Lomas de Angelopolis C.P. 72830 San Andrés Cholula, Puebla.', href: 'https://www.google.com/maps?sca_esv=1bf5779d89342acd&rlz=1C1VDKB_esMX1177MX1178&biw=1920&bih=827&sxsrf=ANbL-n7FXZ62aR3ebEvjcyleTWQpclkWpg:1779728772184&kgmid=/g/11n__y1gpk&shem=epsdc,rimspwouoe&shndl=30&kgs=eef90a9b59c403a0&um=1&ie=UTF-8&fb=1&gl=mx&sa=X&geocode=KavpVdmAx8-FMWUXPeFG3mcA&daddr=Blvd.+de+los+Reyes,+72830+San+Bernardino+Tlaxcalancingo,+Pue.' },
                 { icon: MapPin, label: 'CDMX',     value: 'German Centre Av. Santa Fe 170 Int. 1-2-04 Col. Lomas de Santa Fe C.P. 01376', href: 'https://www.google.com/maps?sca_esv=1bf5779d89342acd&rlz=1C1VDKB_esMX1177MX1178&biw=1920&bih=827&sxsrf=ANbL-n74Y1r7k3FbvvbRBhMWLFjMH1nTVg:1779728802385&kgmid=/g/1tqpzlnf&shem=epsdc,rimspwouoe&shndl=30&kgs=940ae8adf8d61736&um=1&ie=UTF-8&fb=1&gl=mx&sa=X&geocode=KXULFsSzAdKFMbS5siqtpln3&daddr=Av.+Santa+Fe+170,+Santa+Fe,+Zedec+Sta+F%C3%A9,+%C3%81lvaro+Obreg%C3%B3n,+01376+Ciudad+de+M%C3%A9xico,+CDMX.' },
               ].map(({ icon: Icon, label, value, href }) => (
@@ -54,7 +61,6 @@ export default function Contact() {
               ))}
             </div>
 
-            {/* Social */}
             <div className={styles.social}>
               {[
                 { name: 'LinkedIn',  url: 'https://www.linkedin.com/in/daniela-saetaoc/' },
@@ -83,31 +89,35 @@ export default function Contact() {
                 <h3 className={styles.formTitle}>Consulta gratuita</h3>
                 <p className={styles.formSub}>Sin compromiso · Respuesta en 24 hrs</p>
 
+                {error && (
+                  <p style={{ color: 'red', fontSize: '0.85rem', marginBottom: '12px' }}>{error}</p>
+                )}
+
                 <div className={styles.row}>
                   <div className={styles.field}>
                     <label className={styles.label}>Nombre completo *</label>
-                    <input className={styles.input} name="nombre" placeholder="Tu nombre" value={form.nombre} onChange={handleChange} />
+                    <input required className={styles.input} name="nombre" placeholder="Tu nombre" value={form.nombre} onChange={handleChange} />
                   </div>
                   <div className={styles.field}>
-                    <label className={styles.label}>Empresa</label>
-                    <input className={styles.input} name="empresa" placeholder="Nombre de tu empresa" value={form.empresa} onChange={handleChange} />
+                    <label className={styles.label}>Empresa *</label>
+                    <input required className={styles.input} name="empresa" placeholder="Nombre de tu empresa" value={form.empresa} onChange={handleChange} />
                   </div>
                 </div>
 
                 <div className={styles.row}>
                   <div className={styles.field}>
                     <label className={styles.label}>Correo electrónico *</label>
-                    <input className={styles.input} type="email" name="email" placeholder="correo@ejemplo.com" value={form.email} onChange={handleChange} />
+                    <input required className={styles.input} type="email" name="email" placeholder="correo@ejemplo.com" value={form.email} onChange={handleChange} />
                   </div>
                   <div className={styles.field}>
-                    <label className={styles.label}>Teléfono</label>
-                    <input className={styles.input} name="telefono" placeholder="+52 222 000 0000" value={form.telefono} onChange={handleChange} />
+                    <label className={styles.label}>Teléfono *</label>
+                    <input required className={styles.input} name="telefono" placeholder="+52 222 000 0000" value={form.telefono} onChange={handleChange} />
                   </div>
                 </div>
 
                 <div className={styles.field}>
-                  <label className={styles.label}>Servicio de interés</label>
-                  <select className={styles.input} name="servicio" value={form.servicio} onChange={handleChange}>
+                  <label className={styles.label}>Servicio de interés *</label>
+                  <select required className={styles.input} name="servicio" value={form.servicio} onChange={handleChange}>
                     <option value="">Selecciona un servicio</option>
                     <option>Softlanding</option>
                     <option>Legales</option>
@@ -122,6 +132,7 @@ export default function Contact() {
                 <div className={styles.field}>
                   <label className={styles.label}>Mensaje *</label>
                   <textarea
+                    required
                     className={`${styles.input} ${styles.textarea}`}
                     name="mensaje"
                     rows={4}

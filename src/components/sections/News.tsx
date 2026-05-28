@@ -52,7 +52,7 @@ export default function News() {
                   <img
                     src={n.img}
                     alt={n.title}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    style={{ width: '100%', height: '220px', objectFit: 'cover' }}
                   />
                   <span className={styles.cardTag}>
                     <Tag size={11} /> {n.tag}
@@ -64,7 +64,6 @@ export default function News() {
                   </span>
                   <h3 className={styles.cardTitle}>{n.title}</h3>
                   <p className={styles.cardExcerpt}>{n.excerpt}</p>
-                  
                   <a
                     href={n.href}
                     target="_blank"

@@ -1,32 +1,27 @@
 import styles from './Team.module.css'
 
 const team = [
-  { name: 'Daniela Nebel',   role: 'Fundadora & CEO',                office: 'Puebla' },
-  { name: 'Nombre Apellido', role: 'Consultor Fiscal',               office: 'Puebla' },
-  { name: 'Nombre Apellido', role: 'Consultor Legal',                office: 'Puebla' },
-  { name: 'Nombre Apellido', role: 'Especialista Comercio Exterior', office: 'Puebla' },
-  { name: 'Nombre Apellido', role: 'Auditor',                        office: 'CDMX'   },
-  { name: 'Nombre Apellido', role: 'Consultor Financiero',           office: 'CDMX'   },
-  { name: 'Nombre Apellido', role: 'Softlanding Specialist',         office: 'CDMX'   },
-  { name: 'Nombre Apellido', role: 'Asistente Ejecutivo',            office: 'CDMX'   },
+  { name: 'Daniela Nebel',    role: 'Fundadora & CEO',                img: '/images/Foto dani (1).png' },
+  { name: 'Maritza Cantú',    role: 'CFO, Treasury & Billing Manager', img: '/images/Maritza Cantú - CFO, Treasury & Billing Manager.png' },
+  { name: 'Edith Chávez',     role: 'CAO Human Resources Manager',    img: '/images/Edith Chávez - CAO Human Resources Manager.png' },
+  { name: 'Eduardo López',    role: 'Foreign Trade Manager',          img: '/images/Eduardo López - Foreign Trade Manager.png' },
+  { name: 'Leslie Soto',      role: 'Marketing Manager',              img: '/images/Leslie Soto - Marketing Manager.png' },
+  { name: 'Alfredo Galindo',  role: 'Accountant Manager',             img: '/images/Alfredo Galindo - Accountant Manager.png' },
 ]
 
-const puebla = team.filter((m) => m.office === 'Puebla')
-const cdmx = team.filter((m) => m.office === 'CDMX')
-
-function Card({ name, role, office }: { name: string; role: string; office: string }) {
-  const initials = name.split(' ').map((n) => n[0]).join('').slice(0, 2)
+function Card({ name, role, img }: { name: string; role: string; img: string }) {
   return (
     <div className={styles.card}>
       <div className={styles.photo}>
-        <div className={styles.photoPlaceholder}>
-          <span>{initials}</span>
-        </div>
+        <img
+          src={img}
+          alt={name}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+        />
       </div>
       <div className={styles.info}>
         <h3 className={styles.name}>{name}</h3>
         <p className={styles.role}>{role}</p>
-        <span className={styles.officeBadge}>{office}</span>
       </div>
     </div>
   )
@@ -47,33 +42,15 @@ export default function Team() {
           </p>
         </div>
 
-        <div className={styles.officeBlock}>
-          <div className={styles.officeLabel}>
-            <span className={styles.officeDot} />
-            Oficina Puebla
-          </div>
-          <div className={styles.grid}>
-            {puebla.map((m, i) => (
-              <Card key={i} name={m.name} role={m.role} office={m.office} />
-            ))}
-          </div>
-        </div>
-
-        <div className={styles.officeBlock}>
-          <div className={styles.officeLabel}>
-            <span className={styles.officeDot} />
-            Oficina CDMX — German Centre
-          </div>
-          <div className={styles.grid}>
-            {cdmx.map((m, i) => (
-              <Card key={i} name={m.name} role={m.role} office={m.office} />
-            ))}
-          </div>
+        <div className={styles.grid}>
+          {team.map((m, i) => (
+            <Card key={i} name={m.name} role={m.role} img={m.img} />
+          ))}
         </div>
 
         <div className={styles.cta}>
           <p className={styles.ctaText}>¿Quieres ser parte del equipo?</p>
-          <a
+          
             href="https://www.linkedin.com/company/saeta-orientaci%C3%B3n-corporativa-s-c/jobs/"
             target="_blank"
             rel="noopener noreferrer"

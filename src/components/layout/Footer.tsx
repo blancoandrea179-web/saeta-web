@@ -14,7 +14,7 @@ const links = {
     { label: 'Auditoría',          href: '#servicios' },
   ],
   legal: [
-    { label: 'Aviso de Privacidad', href: '/privacidad' },
+    { label: 'Aviso de Privacidad',    href: '/privacidad' },
     { label: 'Términos & Condiciones', href: '/terminos' },
     { label: 'Política de Cookies',    href: '/cookies' },
   ],
@@ -33,7 +33,6 @@ export default function Footer() {
 
       <div className={`container ${styles.top}`}>
 
-        {/* Brand con chevron apuntando ARRIBA */}
         <div className={styles.brand}>
           <div className={styles.logo}>
             <div className={styles.logoChevron}>
@@ -81,8 +80,8 @@ export default function Footer() {
           </ul>
           <div style={{ marginTop: '24px' }}>
             <h4 className={styles.colTitle}>Contacto</h4>
-            <p className={styles.contactText}>+52 222 533 9586</p>
-            <p className={styles.contactText}>contacto@saetaoc.com</p>
+            <a href="tel:+522225339586" className={styles.contactText}>+52 222 533 9586</a>
+            <a href="mailto:contacto@saetaoc.com" className={styles.contactText}>contacto@saetaoc.com</a>
           </div>
         </div>
 

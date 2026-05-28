@@ -7,7 +7,7 @@ const languages = [
     lang: 'Español',
     label: 'Principal',
     desc: 'Nuestra lengua operativa. Atendemos a empresas nacionales y latinoamericanas con total fluidez.',
-    href: '#',
+    href: '/es',
   },
   {
     flag: 'https://flagcdn.com/us.svg',
@@ -15,7 +15,7 @@ const languages = [
     lang: 'English',
     label: 'International',
     desc: 'We serve international companies expanding into Mexico with full English-language advisory support.',
-    href: '#',
+    href: '/en',
   },
   {
     flag: 'https://flagcdn.com/de.svg',
@@ -23,7 +23,7 @@ const languages = [
     lang: 'Deutsch',
     label: 'International',
     desc: 'Wir begleiten deutschsprachige Unternehmen bei ihrer Expansion nach Mexiko und Lateinamerika.',
-    href: '#',
+    href: '/de',
   },
 ]
 

@@ -41,8 +41,8 @@ export default function Contact() {
               {[
                 { icon: Phone,  label: 'Teléfono', value: '+52 222 533 9586',        href: 'tel:+522225339586' },
                 { icon: Mail,   label: 'Correo',   value: 'contacto@saetaoc.com',    href: 'mailto:contacto@saetaoc.com' },
-                { icon: MapPin, label: 'Puebla',   value: 'Corporativo Alsur Av. Atlixcayotl 6518 Int. 8 Col. Lomas de Angelopolis C.P. 72830 San Andrés Cholula, Puebla.', href: 'https://share.google/6cWT8k3yhZEQN7io6' },
-                { icon: MapPin, label: 'CDMX',     value: 'German Centre Av. Santa Fe 170 Int. 1-2-04 Col. Lomas de Santa Fe C.P. 01376', href: 'https://share.google/ChHKSUTG89EqnNaqa' },
+                { icon: MapPin, label: 'Puebla',   value: 'Corporativo Alsur Av. Atlixcayotl 6518 Int. 8 Col. Lomas de Angelopolis C.P. 72830 San Andrés Cholula, Puebla.', href: 'https://www.google.com/maps?sca_esv=1bf5779d89342acd&rlz=1C1VDKB_esMX1177MX1178&biw=1920&bih=827&sxsrf=ANbL-n7FXZ62aR3ebEvjcyleTWQpclkWpg:1779728772184&kgmid=/g/11n__y1gpk&shem=epsdc,rimspwouoe&shndl=30&kgs=eef90a9b59c403a0&um=1&ie=UTF-8&fb=1&gl=mx&sa=X&geocode=KavpVdmAx8-FMWUXPeFG3mcA&daddr=Blvd.+de+los+Reyes,+72830+San+Bernardino+Tlaxcalancingo,+Pue.' },
+                { icon: MapPin, label: 'CDMX',     value: 'German Centre Av. Santa Fe 170 Int. 1-2-04 Col. Lomas de Santa Fe C.P. 01376', href: 'https://www.google.com/maps?sca_esv=1bf5779d89342acd&rlz=1C1VDKB_esMX1177MX1178&biw=1920&bih=827&sxsrf=ANbL-n74Y1r7k3FbvvbRBhMWLFjMH1nTVg:1779728802385&kgmid=/g/1tqpzlnf&shem=epsdc,rimspwouoe&shndl=30&kgs=940ae8adf8d61736&um=1&ie=UTF-8&fb=1&gl=mx&sa=X&geocode=KXULFsSzAdKFMbS5siqtpln3&daddr=Av.+Santa+Fe+170,+Santa+Fe,+Zedec+Sta+F%C3%A9,+%C3%81lvaro+Obreg%C3%B3n,+01376+Ciudad+de+M%C3%A9xico,+CDMX.' },
               ].map(({ icon: Icon, label, value, href }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer" className={styles.contactItem}>
                   <div className={styles.contactIcon}><Icon size={18} /></div>

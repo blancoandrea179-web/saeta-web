@@ -55,7 +55,6 @@ export default function Languages() {
               <div className={styles.langCode}>{l.code}</div>
               <h3 className={styles.langName}>{l.lang}</h3>
               <p className={styles.langDesc}>{l.desc}</p>
-              <div className={styles.cardArrow}>→</div>
             </a>
           ))}
         </div>

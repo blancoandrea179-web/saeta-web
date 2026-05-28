@@ -93,9 +93,6 @@ export default function News() {
                 </div>
               ))}
             </div>
-            <a href="#contacto" className={`btn btn--primary ${styles.sidebarCta}`}>
-              Registrarme
-            </a>
           </div>
 
         </div>

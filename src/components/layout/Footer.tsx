@@ -4,7 +4,6 @@ const links = {
   empresa: [
     { label: 'Inicio',       href: '#inicio' },
     { label: 'Sobre SAETA',  href: '#sobre' },
-    { label: 'Equipo',       href: '#' },
     { label: 'Vacantes',     href: 'https://www.linkedin.com/company/saeta-orientaci%C3%B3n-corporativa-s-c/jobs/' },
   ],
   servicios: [
@@ -93,7 +92,6 @@ export default function Footer() {
         <div className="container">
           <div className={styles.bottomInner}>
             <span>© {new Date().getFullYear()} SAETA OC · Todos los derechos reservados.</span>
-            <span>Hecho con ♥ en México 🇲🇽</span>
           </div>
         </div>
       </div>

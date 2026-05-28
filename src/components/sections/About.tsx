@@ -24,6 +24,13 @@ const tabs = [
   },
 ]
 
+const navItems = [
+  { label: 'ORGANIGRAMA', href: '#sobre',     img: '/images/Organigrama SAETA.png' },
+  { label: 'TEAM SAETA',  href: '#team',      img: '/images/TEAM SAETA.png' },
+  { label: 'SERVICIOS',   href: '#servicios', img: '/images/Servicios SAETA.jpg' },
+  { label: 'CONTACTO',    href: '#contacto',  img: '/images/Contacto.png' },
+]
+
 export default function About() {
   return (
     <section id="sobre" className={styles.about}>
@@ -57,12 +64,12 @@ export default function About() {
 
           <div className={styles.ceoPhoto}>
             <img
-              src="/images/daniela-nebel.jpg"
+              src="/images/Foto dani (1).png"
               alt="Daniela Nebel — Fundadora & CEO de SAETA"
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
             />
           </div>
-        </div>  
+        </div>
 
         <div className={styles.separator}>
           <h2 className={styles.sectionHeading}>DESCOMPLICANDO LOS PROCESOS...</h2>
@@ -78,19 +85,15 @@ export default function About() {
           ))}
         </div>
 
-        {/* Bloques de navegación — TEAM SAETA apunta a #team */}
         <div className={styles.navGrid}>
-          {[
-            { label: 'ORGANIGRAMA', href: '#sobre' },
-            { label: 'TEAM SAETA',  href: '#team' },
-            { label: 'SERVICIOS',   href: '#servicios' },
-            { label: 'CONTACTO',    href: '#contacto' },
-          ].map((item) => (
+          {navItems.map((item) => (
             <a key={item.label} href={item.href} className={styles.navCard}>
               <div className={styles.navCardImg}>
-                <div className="img-placeholder" style={{ width: '100%', height: '100%' }}>
-                  <span>{item.label}</span>
-                </div>
+                <img
+                  src={item.img}
+                  alt={item.label}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit' }}
+                />
               </div>
               <div className={styles.navCardLabel}>{item.label}</div>
             </a>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
+import '@/styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'SAETA OC — Consultoría Empresarial Internacional',

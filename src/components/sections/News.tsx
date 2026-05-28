@@ -7,7 +7,7 @@ const news = [
     tag: 'Comercio Exterior',
     title: 'Adición de la Regla 2.2.26 BIS: Aviso Automático de Importación para Productos de Aluminio',
     excerpt: 'La Secretaría de Economía publicó la Regla 2.2.26 BIS, que establece la obligación de tramitar un aviso automático de importación para 42 fracciones arancelarias de aluminio. La medida busca fortalecer la trazabilidad del origen del material y prevenir prácticas de triangulación comercial.',
-    img: '800×500',
+    img: 'images/noticia.png',
     href: 'https://www.linkedin.com/pulse/adici%C3%B3n-de-la-regla-2226-bis-aviso-autom%C3%A1tico-para-gonzalez-sanchez-nqzxe/',
   },
 ]

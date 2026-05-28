@@ -148,3 +148,15 @@
 @media (max-width: 500px) {
   .top { grid-template-columns: 1fr; }
 }
+
+.contactText {
+  display: block;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.85rem;
+  margin-top: 6px;
+  text-decoration: none;
+}
+
+.contactText:hover {
+  color: var(--lime);
+}

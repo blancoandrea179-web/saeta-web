@@ -3,11 +3,12 @@ import { Calendar, ArrowRight, Tag } from 'lucide-react'
 
 const news = [
   {
-    date: 'Mayo 2025',
-    tag: 'Fiscal',
-    title: 'Nuevas disposiciones del SAT para empresas con operaciones internacionales',
-    excerpt: 'El SAT emitió actualizaciones relevantes sobre precios de transferencia y obligaciones para empresas con vinculación en el extranjero. Conozca cómo le afecta.',
+    date: '2 de abril de 2026',
+    tag: 'Comercio Exterior',
+    title: 'Adición de la Regla 2.2.26 BIS: Aviso Automático de Importación para Productos de Aluminio',
+    excerpt: 'La Secretaría de Economía publicó la Regla 2.2.26 BIS, que establece la obligación de tramitar un aviso automático de importación para 42 fracciones arancelarias de aluminio. La medida busca fortalecer la trazabilidad del origen del material y prevenir prácticas de triangulación comercial.',
     img: '800×500',
+    href: 'https://www.linkedin.com/pulse/adici%C3%B3n-de-la-regla-2226-bis-aviso-autom%C3%A1tico-para-gonzalez-sanchez-nqzxe/',
   },
   {
     date: 'Abril 2025',
@@ -15,6 +16,7 @@ const news = [
     title: 'Cambios en el régimen de importación temporal: lo que debes saber',
     excerpt: 'El gobierno federal actualizó las reglas generales de comercio exterior. Analizamos los puntos clave y cómo adaptarse antes de la fecha límite.',
     img: '800×500',
+    href: '#',
   },
   {
     date: 'Marzo 2025',
@@ -22,6 +24,7 @@ const news = [
     title: 'SAETA fortalece su presencia en el German Centre CDMX',
     excerpt: 'Ampliamos nuestras instalaciones en Santa Fe para atender mejor a empresas de habla alemana que buscan establecerse en México con un proceso sin fricciones.',
     img: '800×500',
+    href: '#',
   },
 ]
 
@@ -39,6 +42,26 @@ const events = [
   {
     date: { day: '–', month: '–' },
     title: 'Congreso Comercio Exterior',
+    desc: 'Próximamente',
+  },
+  {
+    date: { day: '–', month: '–' },
+    title: 'Oktoberfest',
+    desc: 'Próximamente',
+  },
+  {
+    date: { day: '–', month: '–' },
+    title: 'Cena Gala CAMEXA',
+    desc: 'Próximamente',
+  },
+  {
+    date: { day: '–', month: '–' },
+    title: 'Brindis Año Nuevo CAMEXA',
+    desc: 'Próximamente',
+  },
+  {
+    date: { day: '–', month: '–' },
+    title: 'Conferencias Daniela Nebel',
     desc: 'Próximamente',
   },
 ]
@@ -76,9 +99,14 @@ export default function News() {
                   </span>
                   <h3 className={styles.cardTitle}>{n.title}</h3>
                   <p className={styles.cardExcerpt}>{n.excerpt}</p>
-                  <button className={styles.readMore}>
+                  <a
+                    href={n.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.readMore}
+                  >
                     Leer más <ArrowRight size={13} />
-                  </button>
+                  </a>
                 </div>
               </article>
             ))}

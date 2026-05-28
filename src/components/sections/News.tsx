@@ -10,22 +10,6 @@ const news = [
     img: '800×500',
     href: 'https://www.linkedin.com/pulse/adici%C3%B3n-de-la-regla-2226-bis-aviso-autom%C3%A1tico-para-gonzalez-sanchez-nqzxe/',
   },
-  {
-    date: 'Abril 2025',
-    tag: 'Comercio Exterior',
-    title: 'Cambios en el régimen de importación temporal: lo que debes saber',
-    excerpt: 'El gobierno federal actualizó las reglas generales de comercio exterior. Analizamos los puntos clave y cómo adaptarse antes de la fecha límite.',
-    img: '800×500',
-    href: '#',
-  },
-  {
-    date: 'Marzo 2025',
-    tag: 'Softlanding',
-    title: 'SAETA fortalece su presencia en el German Centre CDMX',
-    excerpt: 'Ampliamos nuestras instalaciones en Santa Fe para atender mejor a empresas de habla alemana que buscan establecerse en México con un proceso sin fricciones.',
-    img: '800×500',
-    href: '#',
-  },
 ]
 
 const events = [
@@ -42,26 +26,6 @@ const events = [
   {
     date: { day: '–', month: '–' },
     title: 'Congreso Comercio Exterior',
-    desc: 'Próximamente',
-  },
-  {
-    date: { day: '–', month: '–' },
-    title: 'Oktoberfest',
-    desc: 'Próximamente',
-  },
-  {
-    date: { day: '–', month: '–' },
-    title: 'Cena Gala CAMEXA',
-    desc: 'Próximamente',
-  },
-  {
-    date: { day: '–', month: '–' },
-    title: 'Brindis Año Nuevo CAMEXA',
-    desc: 'Próximamente',
-  },
-  {
-    date: { day: '–', month: '–' },
-    title: 'Conferencias Daniela Nebel',
     desc: 'Próximamente',
   },
 ]
@@ -128,6 +92,9 @@ export default function News() {
                 </div>
               ))}
             </div>
+            <a href="#contacto" className={`btn btn--primary ${styles.sidebarCta}`}>
+              Registrarme
+            </a>
           </div>
 
         </div>

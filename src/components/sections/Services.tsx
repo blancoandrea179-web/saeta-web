@@ -8,38 +8,38 @@ const services = [
   {
     icon: TrendingUp,
     title: 'Softlanding',
-    desc: 'Acompañamiento integral para empresas extranjeras que desean establecerse en México o Latinoamérica. Gestionamos los trámites legales, fiscales y administrativos.',
+    desc: 'Constitución, capacitaciones para la comprensión de regulaciones legales y fiscales locales y sobre el cumplimiento normativo, Headhunting y reclutamiento de empleados locales.',
     tag: 'Internacional',
   },
   {
     icon: Scale,
-    title: 'Consultoría Legal',
-    desc: 'Asesoría jurídica corporativa, contratos, protección de propiedad intelectual y cumplimiento normativo para empresas nacionales e internacionales.',
+    title: 'Legales',
+    desc: 'Laboral, Seguridad Social, Corporativo, Mercantil, Civil, M&A, Migratorio, Propiedad Intelectual, Protección de Datos, Antilavado de Dinero y Gestión de Licencias y Permisos.',
     tag: 'Legal',
   },
   {
     icon: BarChart2,
-    title: 'Consultoría Fiscal',
-    desc: 'Optimización fiscal, planeación tributaria, declaraciones y cumplimiento ante el SAT. Reducimos tu carga impositiva de forma transparente y legal.',
+    title: 'Contabilidad',
+    desc: 'Declaraciones Mensuales y Anuales, Trámites Fiscales, Asesoría General, Precios de Transferencia, Controlling, Forecasting, Budget, Planning y Facturación.',
     tag: 'Fiscal',
+  },
+  {
+    icon: Layers,
+    title: 'Payroll & Treasury',
+    desc: 'Nómina, Treasury (manejo de cuentas bancarias en distintas divisas).',
+    tag: 'Finanzas',
   },
   {
     icon: Globe,
     title: 'Comercio Exterior',
-    desc: 'Gestión de importaciones y exportaciones, trámites aduaneros, regímenes especiales y estrategias de internacionalización para tu negocio.',
+    desc: 'Asesoría en materia aduanera fiscal y de comercio exterior. Soluciones en logística internacional y empresarial, cumplimiento con normas oficiales, auditoría por Data Stage, auditoría y diagnóstico en el control de los activos fijos, auditoría preventiva de operaciones de comercio exterior. Cumplimiento de permisos y reglas no arancelaria.',
     tag: 'Comercio',
   },
   {
     icon: FileSearch,
     title: 'Auditoría',
-    desc: 'Revisión y dictaminación de estados financieros, auditorías internas, análisis de riesgos y control interno para asegurar la salud de tu empresa.',
+    desc: 'Auditoría de Estados Financieros, Auditoría para efectos fiscales, Normas Internacionales de Información Financiera.',
     tag: 'Auditoría',
-  },
-  {
-    icon: Layers,
-    title: 'Consultoría Financiera',
-    desc: 'Planeación financiera, reestructuración de deuda, valuación de empresas, y análisis de viabilidad para proyectos de inversión.',
-    tag: 'Finanzas',
   },
 ]
 
@@ -48,7 +48,6 @@ export default function Services() {
     <section id="servicios" className={`section section--gray ${styles.services}`}>
       <div className="container">
 
-        {/* Header */}
         <div className={styles.header}>
           <div>
             <span className="eyebrow">Lo que hacemos</span>
@@ -56,12 +55,14 @@ export default function Services() {
             <h2 className="section-title">Nuestros servicios</h2>
           </div>
           <p className="section-sub">
-            Ofrecemos un ecosistema completo de soluciones corporativas bajo un mismo techo,
-            adaptándonos al 100% a las necesidades de cada cliente.
+            Somos una empresa líder que brinda servicios de consultoría empresarial.
+            Personalizamos nuestros servicios para adaptarnos a ti y funcionar como tu compañero.
+            "Descomplicamos" los procesos corporativos para hacerlos fáciles, claros y transparentes.
+            Los servicios principales que brindamos: softlanding, orientación legal, fiscal, financiera,
+            auditora, payroll y comercio exterior.
           </p>
         </div>
 
-        {/* Grid */}
         <div className={styles.grid}>
           {services.map(({ icon: Icon, title, desc, tag }, i) => (
             <div key={title} className={styles.card} style={{ animationDelay: `${i * 0.08}s` }}>
@@ -80,7 +81,6 @@ export default function Services() {
           ))}
         </div>
 
-        {/* CTA banner */}
         <div className={styles.ctaBanner}>
           <div>
             <h3 className={styles.ctaTitle}>¿Necesitas un servicio personalizado?</h3>

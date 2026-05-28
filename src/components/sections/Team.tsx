@@ -1,12 +1,13 @@
 import styles from './Team.module.css'
 
 const team = [
-  { name: 'Daniela Nebel',   role: 'Fundadora & CEO',                 img: '/images/Foto dani (1).png' },
-  { name: 'Maritza Cantú',   role: 'CFO, Treasury & Billing Manager', img: '/images/Maritza Cantú - CFO, Treasury & Billing Manager.png' },
-  { name: 'Edith Chávez',    role: 'CAO Human Resources Manager',     img: '/images/Edith Chávez - CAO Human Resources Manager.png' },
-  { name: 'Eduardo López',   role: 'Foreign Trade Manager',           img: '/images/Eduardo López - Foreign Trade Manager.png' },
-  { name: 'Leslie Soto',     role: 'Marketing Manager',               img: '/images/Leslie Soto - Marketing Manager.png' },
-  { name: 'Alfredo Galindo', role: 'Accountant Manager',              img: '/images/Alfredo Galindo - Accountant Manager.png' },
+  { name: 'Daniela Nebel',    role: 'CEO & Founder. Attorney-at-Law',       img: '/images/Foto dani (1).png' },
+  { name: 'Maritza Cantú',    role: 'CFO, Treasury & Billing Manager',      img: '/images/Maritza Cantú - CFO, Treasury & Billing Manager.png' },
+  { name: 'Edith Chávez',     role: 'CAO, Human Resources Manager',         img: '/images/Edith Chávez - CAO Human Resources Manager.png' },
+  { name: 'Nayeli Martinez',  role: 'Legal Manager, Attorney-at-Law',       img: '/images/Foto dani (1).png' },
+  { name: 'Leslie Soto',      role: 'MKT & Office Manager',                 img: '/images/Leslie Soto - Marketing Manager.png' },
+  { name: 'Eduardo López',    role: 'Foreign Trade Manager',                img: '/images/Eduardo López - Foreign Trade Manager.png' },
+  { name: 'Alfredo Galindo',  role: 'Accountant Manager',                   img: '/images/Alfredo Galindo - Accountant Manager.png' },
 ]
 
 function Card({ name, role, img }: { name: string; role: string; img: string }) {
@@ -50,6 +51,7 @@ export default function Team() {
 
         <div className={styles.cta}>
           <p className={styles.ctaText}>¿Quieres ser parte del equipo?</p>
+          
           <a
             href="https://www.linkedin.com/company/saeta-orientaci%C3%B3n-corporativa-s-c/jobs/"
             target="_blank"

@@ -5,17 +5,17 @@ const tabs = [
   {
     icon: Target,
     title: 'Misión',
-    text: 'Proporcionar soluciones integrales en contabilidad, asesoría fiscal y legal, comercio exterior y auditoría en un solo lugar. Somos el socio estratégico que se adapta al 100% a las necesidades de cada cliente.',
+    text: 'Proporcionar soluciones integrales en contabilidad, asesoría fiscal y legal, así como comercio exterior y auditoría; ofreciendo todos estos servicios en un solo lugar. Nos posicionamos como un socio estratégico que se adapta al 100% a las necesidades de cada cliente en cada etapa de su crecimiento. Facilitamos la conexión entre la cultura mexicana y extranjeras, comprendiendo a fondo los desafíos y requerimientos de cada empresa. Nuestra prioridad es ofrecer una guía experta y personalizada, asegurando el cumplimiento normativo, la optimización de procesos y el éxito sostenido de nuestros clientes en un entorno globalizado.',
   },
   {
     icon: Eye,
     title: 'Visión',
-    text: 'Ser empresa líder en todas las áreas que abarcamos, destacando tanto a nivel profesional y técnico como personal, valorando a cada colaborador y asegurándonos de su bienestar.',
+    text: 'Ser una empresa líder en todas las áreas que abarcamos, destacándonos tanto a nivel profesional y técnico como a nivel personal, valorando a cada uno de nuestros colaboradores y asegurándonos de su bienestar. Aspiramos a ser un ejemplo a seguir.',
   },
   {
     icon: Heart,
     title: 'Valores',
-    text: 'Profesionalismo, respeto, confianza, puntualidad, humildad, honestidad, transparencia y sobre todo, empatía. Siempre buscando mejorar individualmente y como equipo.',
+    text: 'En SAETA somos profesionales por excelencia. Buscando siempre mejorar individualmente y como equipo para así ofrecer un trabajo de calidad premium. No olvidamos nuestros valores humanos, que incluyen: respeto, confianza, puntualidad, humildad, honestidad, transparencia y sobre todo, empatía.',
   },
   {
     icon: Briefcase,

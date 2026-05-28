@@ -14,6 +14,14 @@
 
 .header { max-width: 560px; margin-bottom: 56px; }
 
+.eyebrow {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+
 /* ── Click hint ── */
 .clickHint {
   display: inline-flex;
@@ -73,10 +81,24 @@
 
 .card:hover::before { transform: scaleX(1); }
 
+.cardActive {
+  background: rgba(207,224,0,0.10) !important;
+  border-color: rgba(207,224,0,0.55) !important;
+}
+
+.cardActive::before { transform: scaleX(1); }
+
 .cardTop {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
 }
 
 .flag { font-size: 2rem; }
@@ -90,6 +112,19 @@
   background: rgba(200,229,58,0.15);
   border: 1px solid rgba(200,229,58,0.3);
   color: var(--lime);
+  border-radius: 100px;
+}
+
+.activeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  background: var(--lime);
+  color: var(--dark);
   border-radius: 100px;
 }
 

@@ -150,6 +150,24 @@
     "svc5": "Außenhandel",
     "svc6": "Wirtschaftsprüfung"
   },
+  "search": {
+    "back": "Zur Startseite",
+    "noQuery": "Was suchen Sie?",
+    "noQuerySub": "Geben Sie den Namen einer Leistung, eines Bereichs oder Themas ein.",
+    "titlePre": "Ergebnisse für",
+    "resultCount": "{count} Ergebnis(se) gefunden",
+    "noResults": "Keine Ergebnisse für",
+    "noResultsSub": "Versuchen Sie einen anderen Begriff. Hier sind einige Vorschläge:",
+    "placeholder": "Leistung, Thema oder Bereich suchen...",
+    "btnSearch": "Suchen",
+    "goTo": "Zum Bereich",
+    "svcLabel": "Leistung",
+    "aboutLabel": "Unternehmen",
+    "teamLabel": "Team",
+    "newsLabel": "Aktuelles",
+    "contactLabel": "Kontakt",
+    "langLabel": "Sprachen"
+  },
   "footer": {
     "tagline": "Ihr Unternehmenskompass. Wir vereinfachen Prozesse, damit Sie wachsen können.",
     "empresa": "Unternehmen",

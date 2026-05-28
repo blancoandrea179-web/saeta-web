@@ -1,5 +1,6 @@
-import { useTranslations } from 'next-intl'
-import { MousePointerClick } from 'lucide-react'
+import { useTranslations, useLocale } from 'next-intl'
+import { MousePointerClick, Check } from 'lucide-react'
+import { Link } from '@/i18n/navigation'
 import styles from './Languages.module.css'
 
 const langKeys = ['es', 'en', 'de'] as const
@@ -8,16 +9,16 @@ const flags = {
   en: 'https://flagcdn.com/us.svg',
   de: 'https://flagcdn.com/de.svg',
 }
-const hrefs = { es: '/es', en: '/en', de: '/de' }
 
 export default function Languages() {
   const t = useTranslations('languages')
+  const currentLocale = useLocale()
 
   return (
     <section id="idiomas" className={`section section--dark ${styles.languages}`}>
       <div className="container">
         <div className={styles.header}>
-          <span className="eyebrow">{t('eyebrow')}</span>
+          <span className={styles.eyebrow}>{t('eyebrow')}</span>
           <div className="lime-bar" />
           <h2 className="section-title section-title--white">{t('heading')}</h2>
           <p className="section-sub section-sub--white" style={{ marginTop: '16px' }}>
@@ -31,17 +32,39 @@ export default function Languages() {
         </div>
 
         <div className={styles.grid}>
-          {langKeys.map((locale) => (
-            <a key={locale} href={hrefs[locale]} className={styles.card}>
-              <div className={styles.cardTop}>
-                <img src={flags[locale]} alt={t(`${locale}.lang`)} width={48} height={36} style={{ borderRadius: '4px', objectFit: 'cover' }} />
-                <span className={styles.badge}>{t(`${locale}.label`)}</span>
-              </div>
-              <div className={styles.langCode}>{t(`${locale}.code`)}</div>
-              <h3 className={styles.langName}>{t(`${locale}.lang`)}</h3>
-              <p className={styles.langDesc}>{t(`${locale}.desc`)}</p>
-            </a>
-          ))}
+          {langKeys.map((locale) => {
+            const isActive = locale === currentLocale
+            return (
+              <Link
+                key={locale}
+                href="/"
+                locale={locale}
+                className={`${styles.card} ${isActive ? styles.cardActive : ''}`}
+              >
+                <div className={styles.cardTop}>
+                  <img
+                    src={flags[locale]}
+                    alt={t(`${locale}.lang`)}
+                    width={48}
+                    height={36}
+                    style={{ borderRadius: '4px', objectFit: 'cover' }}
+                  />
+                  <div className={styles.badges}>
+                    <span className={styles.badge}>{t(`${locale}.label`)}</span>
+                    {isActive && (
+                      <span className={styles.activeBadge}>
+                        <Check size={10} strokeWidth={3} />
+                        {currentLocale.toUpperCase()}
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <div className={styles.langCode}>{t(`${locale}.code`)}</div>
+                <h3 className={styles.langName}>{t(`${locale}.lang`)}</h3>
+                <p className={styles.langDesc}>{t(`${locale}.desc`)}</p>
+              </Link>
+            )
+          })}
         </div>
 
         <div className={styles.offices}>

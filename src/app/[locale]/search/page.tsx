@@ -1,29 +1,17 @@
 import Navbar from '@/components/layout/Navbar'
-import Hero from '@/components/sections/Hero'
-import About from '@/components/sections/About'
-import Team from '@/components/sections/Team'
-import Services from '@/components/sections/Services'
-import Stats from '@/components/sections/Stats'
-import News from '@/components/sections/News'
-import Languages from '@/components/sections/Languages'
-import Contact from '@/components/sections/Contact'
 import Footer from '@/components/layout/Footer'
+import SearchClient from './SearchClient'
 
-export default function Home() {
+export default function SearchPage({
+  searchParams,
+}: {
+  searchParams: { q?: string }
+}) {
   return (
-    <>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--gray-100)' }}>
       <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Team />
-        <Services />
-        <Stats />
-        <News />
-        <Languages />
-        <Contact />
-      </main>
+      <SearchClient initialQuery={searchParams.q ?? ''} />
       <Footer />
-    </>
+    </div>
   )
 }

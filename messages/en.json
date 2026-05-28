@@ -150,6 +150,24 @@
     "svc5": "Foreign Trade",
     "svc6": "Audit"
   },
+  "search": {
+    "back": "Back to home",
+    "noQuery": "What are you looking for?",
+    "noQuerySub": "Type a service name, section or topic to find it.",
+    "titlePre": "Results for",
+    "resultCount": "{count} result(s) found",
+    "noResults": "No results for",
+    "noResultsSub": "Try a different term. Here are some suggestions:",
+    "placeholder": "Search for a service, topic or section...",
+    "btnSearch": "Search",
+    "goTo": "View section",
+    "svcLabel": "Service",
+    "aboutLabel": "Company",
+    "teamLabel": "Team",
+    "newsLabel": "Updates",
+    "contactLabel": "Contact",
+    "langLabel": "Languages"
+  },
   "footer": {
     "tagline": "Your corporate compass. We simplify processes so you can grow.",
     "empresa": "Company",

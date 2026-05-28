@@ -150,6 +150,24 @@
     "svc5": "Comercio Exterior",
     "svc6": "Auditoría"
   },
+  "search": {
+    "back": "Volver al inicio",
+    "noQuery": "¿Qué estás buscando?",
+    "noQuerySub": "Escribe el nombre de un servicio, sección o tema para encontrarlo.",
+    "titlePre": "Resultados para",
+    "resultCount": "{count} resultado(s) encontrado(s)",
+    "noResults": "Sin resultados para",
+    "noResultsSub": "Intenta con otro término. Aquí hay algunas sugerencias:",
+    "placeholder": "Busca un servicio, tema o sección...",
+    "btnSearch": "Buscar",
+    "goTo": "Ver sección",
+    "svcLabel": "Servicio",
+    "aboutLabel": "Empresa",
+    "teamLabel": "Equipo",
+    "newsLabel": "Actualidad",
+    "contactLabel": "Contacto",
+    "langLabel": "Idiomas"
+  },
   "footer": {
     "tagline": "Tu brújula corporativa. Descomplicamos los procesos para que puedas crecer.",
     "empresa": "Empresa",

@@ -4,7 +4,7 @@ const team = [
   { name: 'Daniela Nebel',    role: 'CEO & Founder. Attorney-at-Law',       img: '/images/Foto dani (1).png' },
   { name: 'Maritza Cantú',    role: 'CFO, Treasury & Billing Manager',      img: '/images/Maritza Cantú - CFO, Treasury & Billing Manager.png' },
   { name: 'Edith Chávez',     role: 'CAO, Human Resources Manager',         img: '/images/Edith Chávez - CAO Human Resources Manager.png' },
-  { name: 'Nayeli Martinez',  role: 'Legal Manager, Attorney-at-Law',       img: '' },
+  { name: 'Nayeli Martinez',  role: 'Legal Manager, Attorney-at-Law',       img: '/images/NAYELI 01.jpg' },
   { name: 'Leslie Soto',      role: 'MKT & Office Manager',                 img: '/images/Leslie Soto - Marketing Manager.png' },
   { name: 'Eduardo López',    role: 'Foreign Trade Manager',                img: '/images/Eduardo López - Foreign Trade Manager.png' },
   { name: 'Alfredo Galindo',  role: 'Accountant Manager',                   img: '/images/Alfredo Galindo - Accountant Manager.png' },

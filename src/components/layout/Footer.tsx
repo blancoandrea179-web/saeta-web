@@ -15,9 +15,9 @@ const links = {
     { label: 'Auditoría',          href: '#servicios' },
   ],
   legal: [
-    { label: 'Aviso de Privacidad',    href: '#' },
-    { label: 'Términos & Condiciones', href: '#' },
-    { label: 'Política de Cookies',    href: '#' },
+    { label: 'Aviso de Privacidad', href: '/privacidad' },
+    { label: 'Términos & Condiciones', href: '/terminos' },
+    { label: 'Política de Cookies',    href: '/cookies' },
   ],
   social: [
     { label: 'LinkedIn',  href: 'https://www.linkedin.com/in/daniela-saetaoc/' },

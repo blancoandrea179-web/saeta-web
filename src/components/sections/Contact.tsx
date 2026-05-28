@@ -39,12 +39,12 @@ export default function Contact() {
 
             <div className={styles.contacts}>
               {[
-                { icon: Phone, label: 'Teléfono', value: '+52 222 533 9586', href: 'tel:+522225339586' },
-                { icon: Mail,  label: 'Correo',   value: 'contacto@saetaoc.com', href: 'mailto:contacto@saetaoc.com' },
-                { icon: MapPin, label: 'Puebla',  value: 'Corporativo Al Sur, Piso 8, Blvrd de los Reyes, Pue.', href: '#' },
-                { icon: MapPin, label: 'CDMX',    value: 'German Centre, Av. Santa Fe 170, Álvaro Obregón.', href: '#' },
+                { icon: Phone,  label: 'Teléfono', value: '+52 222 533 9586',        href: 'tel:+522225339586' },
+                { icon: Mail,   label: 'Correo',   value: 'contacto@saetaoc.com',    href: 'mailto:contacto@saetaoc.com' },
+                { icon: MapPin, label: 'Puebla',   value: 'Corporativo Alsur Av. Atlixcayotl 6518 Int. 8 Col. Lomas de Angelopolis C.P. 72830 San Andrés Cholula, Puebla.', href: 'https://share.google/6cWT8k3yhZEQN7io6' },
+                { icon: MapPin, label: 'CDMX',     value: 'German Centre Av. Santa Fe 170 Int. 1-2-04 Col. Lomas de Santa Fe C.P. 01376', href: 'https://share.google/ChHKSUTG89EqnNaqa' },
               ].map(({ icon: Icon, label, value, href }) => (
-                <a key={label} href={href} className={styles.contactItem}>
+                <a key={label} href={href} target="_blank" rel="noopener noreferrer" className={styles.contactItem}>
                   <div className={styles.contactIcon}><Icon size={18} /></div>
                   <div>
                     <span className={styles.contactLabel}>{label}</span>
@@ -57,10 +57,10 @@ export default function Contact() {
             {/* Social */}
             <div className={styles.social}>
               {[
-                { name: 'LinkedIn', url: 'https://www.linkedin.com/in/daniela-saetaoc/' },
-                { name: 'Facebook', url: 'https://www.facebook.com/saetaoc' },
+                { name: 'LinkedIn',  url: 'https://www.linkedin.com/in/daniela-saetaoc/' },
+                { name: 'Facebook',  url: 'https://www.facebook.com/saetaoc' },
                 { name: 'Instagram', url: 'https://www.instagram.com/saeta.oc' },
-                { name: 'TikTok', url: 'https://www.tiktok.com/@saeta384' },
+                { name: 'TikTok',    url: 'https://www.tiktok.com/@saeta384' },
               ].map((s) => (
                 <a key={s.name} href={s.url} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                   {s.name}
@@ -110,11 +110,11 @@ export default function Contact() {
                   <select className={styles.input} name="servicio" value={form.servicio} onChange={handleChange}>
                     <option value="">Selecciona un servicio</option>
                     <option>Softlanding</option>
-                    <option>Consultoría Legal</option>
-                    <option>Consultoría Fiscal</option>
+                    <option>Legales</option>
+                    <option>Contabilidad</option>
+                    <option>Payroll & Treasury</option>
                     <option>Comercio Exterior</option>
                     <option>Auditoría</option>
-                    <option>Consultoría Financiera</option>
                     <option>Otro</option>
                   </select>
                 </div>

@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl'
+import { MousePointerClick } from 'lucide-react'
 import styles from './Languages.module.css'
 
 const langKeys = ['es', 'en', 'de'] as const
@@ -22,6 +23,11 @@ export default function Languages() {
           <p className="section-sub section-sub--white" style={{ marginTop: '16px' }}>
             {t('sub')}
           </p>
+        </div>
+
+        <div className={styles.clickHint}>
+          <MousePointerClick size={14} />
+          {t('clickHint')}
         </div>
 
         <div className={styles.grid}>

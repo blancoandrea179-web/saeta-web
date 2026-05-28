@@ -110,6 +110,7 @@
     "es": { "code": "ES", "lang": "Español", "label": "Primary", "desc": "Our operational language. We serve national and Latin American companies with complete fluency." },
     "en": { "code": "EN", "lang": "English", "label": "International", "desc": "We serve international companies expanding into Mexico with full English-language advisory support." },
     "de": { "code": "DE", "lang": "Deutsch", "label": "International", "desc": "We support German-speaking companies in their expansion to Mexico and Latin America." },
+    "clickHint": "Click on a card to switch the page language",
     "officesTitle": "Our offices",
     "pueblaCity": "Puebla",
     "pueblaAddr": "Corporativo Al Sur, Floor 8 · Blvrd de los Reyes, 72830 San Bernardino Tlaxcalancingo, Pue.",

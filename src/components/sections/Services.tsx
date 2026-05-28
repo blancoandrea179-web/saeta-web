@@ -75,7 +75,6 @@ export default function Services() {
               <h3 className={styles.cardTitle}>{title}</h3>
               <p className={styles.cardDesc}>{desc}</p>
               <button className={styles.cardLink}>
-                Más información <ArrowRight size={14} />
               </button>
             </div>
           ))}

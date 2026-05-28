@@ -1,11 +1,11 @@
 .services {}
 
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 56px;
-  flex-wrap: wrap;
 }
 
 /* ── Cards grid ── */
@@ -125,7 +125,7 @@
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
-  .header { gap: 32px; align-items: flex-start; }
+  .header { grid-template-columns: 1fr; gap: 24px; }
 }
 
 @media (max-width: 600px) {

@@ -1,15 +1,171 @@
 {
   "nav": {
     "inicio": "Startseite",
-    "noticias": "Neuigkeiten",
     "equipo": "Team",
-    "servicios": "Dienstleistungen",
+    "servicios": "Leistungen",
+    "noticias": "Neuigkeiten & Events",
+    "idioma": "Sprache",
     "contacto": "Kontakt",
-    "idioma": "Sprache"
+    "buscar": "SAETA OC durchsuchen...",
+    "buscarMovil": "Seite durchsuchen...",
+    "consultaGratis": "Kostenlose Beratung"
   },
-  "hero": {
-    "español": "Spanisch",
-    "deutsch": "Deutsch",
-    "english": "Englisch"
+  "about": {
+    "greeting1": "Hallo! Mein Name ist ",
+    "greeting2": ", Gründerin und CEO von SAETA.",
+    "desc": "Unser Ziel ist es, Ihnen den Weg zu vereinfachen durch unsere internationale Beratung: Softlanding, Recht, Finanzen, Steuern, Außenhandel und Wirtschaftsprüfung.",
+    "welcome": "Herzlich willkommen!",
+    "heading": "WIR VEREINFACHEN DIE PROZESSE...",
+    "mision": {
+      "title": "Mission",
+      "text": "Umfassende Lösungen in den Bereichen Buchhaltung, Steuer- und Rechtsberatung sowie Außenhandel und Wirtschaftsprüfung anzubieten – alles unter einem Dach. Wir positionieren uns als strategischer Partner, der sich zu 100 % an die Bedürfnisse jedes Kunden in jeder Wachstumsphase anpasst. Wir erleichtern die Verbindung zwischen mexikanischer und ausländischer Unternehmenskultur und verstehen die Herausforderungen und Anforderungen jedes Unternehmens. Unser Ziel ist eine individuelle, fachkundige Begleitung, die regulatorische Compliance, Prozessoptimierung und den nachhaltigen Erfolg unserer Kunden in einem globalisierten Umfeld sicherstellt."
+    },
+    "vision": {
+      "title": "Vision",
+      "text": "In allen Bereichen, die wir abdecken, ein führendes Unternehmen zu sein – sowohl auf professioneller und technischer als auch auf persönlicher Ebene – und jeden unserer Mitarbeitenden zu schätzen und ihr Wohlbefinden sicherzustellen. Wir streben danach, ein Vorbild zu sein."
+    },
+    "valores": {
+      "title": "Werte",
+      "text": "Bei SAETA sind wir Profis par excellence. Wir streben stets danach, uns individuell und als Team weiterzuentwickeln, um Arbeit in Premium-Qualität zu liefern. Wir vergessen unsere menschlichen Werte nicht: Respekt, Vertrauen, Pünktlichkeit, Bescheidenheit, Ehrlichkeit, Transparenz und vor allem Empathie."
+    },
+    "unete": {
+      "title": "Werde Teil des Teams",
+      "text": "Wir suchen engagierte Talente. Wenn Sie Teil eines Unternehmens im ständigen internationalen Wachstum werden möchten, schauen Sie sich unsere offenen Stellen auf LinkedIn an."
+    },
+    "nav": {
+      "organigrama": "ORGANIGRAMM",
+      "team": "SAETA TEAM",
+      "servicios": "LEISTUNGEN",
+      "contacto": "KONTAKT"
+    }
+  },
+  "services": {
+    "eyebrow": "Was wir tun",
+    "heading": "Unsere Leistungen",
+    "sub": "Wir sind ein führendes Unternehmen für Unternehmensberatung. Wir passen unsere Leistungen individuell an und fungieren als Ihr Partner. Wir \"vereinfachen\" Unternehmensprozesse und machen sie einfach, klar und transparent. Unsere Kernleistungen: Softlanding, Recht, Steuern, Finanzen, Wirtschaftsprüfung, Payroll und Außenhandel.",
+    "cta": {
+      "title": "Benötigen Sie eine maßgeschneiderte Lösung?",
+      "sub": "Wir passen uns Ihrem Unternehmen, Ihrer Branche und Ihren spezifischen Zielen an.",
+      "btn": "Mit einem Experten sprechen"
+    },
+    "items": {
+      "softlanding": {
+        "title": "Softlanding",
+        "desc": "Unternehmensgründung, Schulungen zu lokalen Rechts- und Steuervorschriften sowie Compliance, Headhunting und Rekrutierung lokaler Mitarbeiter.",
+        "tag": "International"
+      },
+      "legales": {
+        "title": "Recht",
+        "desc": "Arbeitsrecht, Sozialversicherung, Gesellschaftsrecht, Handelsrecht, Zivilrecht, M&A, Migrationsrecht, Geistiges Eigentum, Datenschutz, Geldwäscheprävention und Lizenz- & Genehmigungsmanagement.",
+        "tag": "Recht"
+      },
+      "contabilidad": {
+        "title": "Buchhaltung",
+        "desc": "Monatliche und jährliche Steuererklärungen, steuerliche Anträge, allgemeine Beratung, Verrechnungspreise, Controlling, Forecasting, Budget, Planung und Rechnungsstellung.",
+        "tag": "Steuern"
+      },
+      "payroll": {
+        "title": "Payroll & Treasury",
+        "desc": "Lohnabrechnung, Treasury (Verwaltung von Bankkonten in verschiedenen Währungen).",
+        "tag": "Finanzen"
+      },
+      "comercio": {
+        "title": "Außenhandel",
+        "desc": "Zoll- und steuerrechtliche Beratung im Außenhandel. Internationale Logistiklösungen, Einhaltung offizieller Normen, Data-Stage-Prüfung, Anlagevermögenskontrolle, präventive Prüfung von Außenhandelsoperationen. Einhaltung von Genehmigungen und nicht-tarifären Regeln.",
+        "tag": "Handel"
+      },
+      "auditoria": {
+        "title": "Wirtschaftsprüfung",
+        "desc": "Abschlussprüfung, steuerliche Prüfung, Internationale Rechnungslegungsstandards (IFRS).",
+        "tag": "Prüfung"
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "Lernen Sie das Team kennen",
+    "heading": "Team SAETA",
+    "sub": "Engagierte Fachleute, die sich der Vereinfachung Ihres Unternehmens verschrieben haben, präsent in Puebla und Mexiko-Stadt.",
+    "cta": "Möchten Sie Teil des Teams werden?",
+    "ctaBtn": "Stellen auf LinkedIn ansehen"
+  },
+  "stats": {
+    "clientes": { "label": "Zufriedene Kunden", "sub": "nationale und internationale Unternehmen" },
+    "anos": { "label": "Jahre Erfahrung", "sub": "in der Unternehmensberatung" },
+    "oficinas": { "label": "Büros in Mexiko", "sub": "Puebla und Mexiko-Stadt" },
+    "areas": { "label": "Servicebereiche", "sub": "unter einem Dach" },
+    "tagline": "\"Wir sind der Kompass, den Ihr Unternehmen braucht, um in der Unternehmenswelt zu navigieren.\"",
+    "taglineAuthor": "— Daniela Nebel, Gründerin & CEO"
+  },
+  "news": {
+    "eyebrow": "Aktuelles",
+    "heading": "Nachrichten & Events",
+    "readMore": "Weiterlesen",
+    "upcomingEvents": "Bevorstehende Events",
+    "comingSoon": "Demnächst"
+  },
+  "languages": {
+    "eyebrow": "Globale Abdeckung",
+    "heading": "Wir sprechen Ihre Sprache",
+    "sub": "SAETA arbeitet in drei Sprachen, um Kommunikationsbarrieren in jedem Unternehmensprozess zu beseitigen.",
+    "es": { "code": "ES", "lang": "Español", "label": "Primär", "desc": "Unsere Betriebssprache. Wir betreuen nationale und lateinamerikanische Unternehmen mit vollständiger Sprachkompetenz." },
+    "en": { "code": "EN", "lang": "English", "label": "International", "desc": "We serve international companies expanding into Mexico with full English-language advisory support." },
+    "de": { "code": "DE", "lang": "Deutsch", "label": "International", "desc": "Wir begleiten deutschsprachige Unternehmen bei ihrer Expansion nach Mexiko und Lateinamerika." },
+    "officesTitle": "Unsere Büros",
+    "pueblaCity": "Puebla",
+    "pueblaAddr": "Corporativo Al Sur, Etage 8 · Blvrd de los Reyes, 72830 San Bernardino Tlaxcalancingo, Pue.",
+    "cdmxCity": "Mexiko-Stadt",
+    "cdmxAddr": "German Centre, Etage 1 — Büro 1-2-04 · Av. Santa Fe 170, Santa Fe, Álvaro Obregón, 01376 CDMX."
+  },
+  "contact": {
+    "eyebrow": "Kontakt aufnehmen",
+    "heading": "Sprechen wir über Ihr Unternehmen",
+    "sub": "Vereinbaren Sie eine kostenlose Erstberatung mit unserem Team. Wir analysieren Ihre Situation kostenlos und schlagen den geeignetsten Aktionsplan vor.",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "formTitle": "Kostenlose Beratung",
+    "formSub": "Unverbindlich · Antwort in 24 Std.",
+    "nombre": "Vollständiger Name *",
+    "nombrePlaceholder": "Ihr Name",
+    "empresa": "Unternehmen *",
+    "empresaPlaceholder": "Name Ihres Unternehmens",
+    "emailLabel": "E-Mail-Adresse *",
+    "emailPlaceholder": "email@beispiel.de",
+    "telefono": "Telefon *",
+    "telefonoPlaceholder": "+49 000 000 0000",
+    "servicio": "Interessierender Service *",
+    "servicioDefault": "Service auswählen",
+    "mensaje": "Nachricht *",
+    "mensajePlaceholder": "Erzählen Sie uns kurz von Ihrem Unternehmen und was Sie benötigen...",
+    "submit": "Anfrage senden",
+    "required": "Bitte füllen Sie alle Felder aus, bevor Sie absenden.",
+    "otro": "Andere",
+    "successHeading": "Nachricht gesendet!",
+    "successSub": "Wir werden uns innerhalb von 24 Arbeitsstunden bei Ihnen melden.",
+    "successBtn": "Weitere Nachricht senden",
+    "svc1": "Softlanding",
+    "svc2": "Recht",
+    "svc3": "Buchhaltung",
+    "svc4": "Payroll & Treasury",
+    "svc5": "Außenhandel",
+    "svc6": "Wirtschaftsprüfung"
+  },
+  "footer": {
+    "tagline": "Ihr Unternehmenskompass. Wir vereinfachen Prozesse, damit Sie wachsen können.",
+    "empresa": "Unternehmen",
+    "servicios": "Leistungen",
+    "legal": "Rechtliches",
+    "contacto": "Kontakt",
+    "copyright": "Alle Rechte vorbehalten.",
+    "inicio": "Startseite",
+    "sobre": "Über SAETA",
+    "vacantes": "Stellenangebote",
+    "softlanding": "Softlanding",
+    "consultoriaLegal": "Rechtsberatung",
+    "consultoriaFiscal": "Steuerberatung",
+    "comercio": "Außenhandel",
+    "auditoria": "Wirtschaftsprüfung",
+    "privacidad": "Datenschutzerklärung",
+    "terminos": "AGB",
+    "cookies": "Cookie-Richtlinie"
   }
 }

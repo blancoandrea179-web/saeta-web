@@ -1,37 +1,24 @@
+import { useTranslations } from 'next-intl'
 import styles from './About.module.css'
 import { Target, Eye, Heart, Briefcase } from 'lucide-react'
 
-const tabs = [
-  {
-    icon: Target,
-    title: 'Misión',
-    text: 'Proporcionar soluciones integrales en contabilidad, asesoría fiscal y legal, así como comercio exterior y auditoría; ofreciendo todos estos servicios en un solo lugar. Nos posicionamos como un socio estratégico que se adapta al 100% a las necesidades de cada cliente en cada etapa de su crecimiento. Facilitamos la conexión entre la cultura mexicana y extranjeras, comprendiendo a fondo los desafíos y requerimientos de cada empresa. Nuestra prioridad es ofrecer una guía experta y personalizada, asegurando el cumplimiento normativo, la optimización de procesos y el éxito sostenido de nuestros clientes en un entorno globalizado.',
-  },
-  {
-    icon: Eye,
-    title: 'Visión',
-    text: 'Ser una empresa líder en todas las áreas que abarcamos, destacándonos tanto a nivel profesional y técnico como a nivel personal, valorando a cada uno de nuestros colaboradores y asegurándonos de su bienestar. Aspiramos a ser un ejemplo a seguir.',
-  },
-  {
-    icon: Heart,
-    title: 'Valores',
-    text: 'En SAETA somos profesionales por excelencia. Buscando siempre mejorar individualmente y como equipo para así ofrecer un trabajo de calidad premium. No olvidamos nuestros valores humanos, que incluyen: respeto, confianza, puntualidad, humildad, honestidad, transparencia y sobre todo, empatía.',
-  },
-  {
-    icon: Briefcase,
-    title: 'Únete',
-    text: 'Buscamos talento comprometido. Si quieres ser parte de una empresa en constante crecimiento internacional, revisa nuestras vacantes en LinkedIn.',
-  },
-]
-
-const navItems = [
-  { label: 'ORGANIGRAMA', href: '#sobre',     img: '/images/Organigrama SAETA.png' },
-  { label: 'TEAM SAETA',  href: '#team',      img: '/images/TEAM SAETA.png' },
-  { label: 'SERVICIOS',   href: '#servicios', img: '/images/Servicios SAETA.jpg' },
-  { label: 'CONTACTO',    href: '#contacto',  img: '/images/Contacto.png' },
-]
-
 export default function About() {
+  const t = useTranslations('about')
+
+  const tabs = [
+    { icon: Target,    title: t('mision.title'), text: t('mision.text') },
+    { icon: Eye,       title: t('vision.title'), text: t('vision.text') },
+    { icon: Heart,     title: t('valores.title'), text: t('valores.text') },
+    { icon: Briefcase, title: t('unete.title'), text: t('unete.text') },
+  ]
+
+  const navItems = [
+    { label: t('nav.organigrama'), href: '#sobre',     img: '/images/Organigrama SAETA.png' },
+    { label: t('nav.team'),        href: '#team',      img: '/images/TEAM SAETA.png' },
+    { label: t('nav.servicios'),   href: '#servicios', img: '/images/Servicios SAETA.jpg' },
+    { label: t('nav.contacto'),    href: '#contacto',  img: '/images/Contacto.png' },
+  ]
+
   return (
     <section id="sobre" className={styles.about}>
 
@@ -53,13 +40,10 @@ export default function About() {
         <div className={styles.heroIntro}>
           <div className={styles.introText}>
             <p className={styles.ceoGreeting}>
-              ¡Hola! mi nombre es <strong>Daniela Nebel</strong>, fundadora y CEO de SAETA.
+              {t('greeting1')}<strong>Daniela Nebel</strong>{t('greeting2')}
             </p>
-            <p className={styles.ceoDesc}>
-              Nuestro objetivo es <em>descomplicarte</em> a través de nuestra consultoría
-              internacional: softlanding, legal, financiera, fiscal, comercio exterior y auditoría.
-            </p>
-            <p className={styles.ceoWelcome}>¡Bienvenidos!</p>
+            <p className={styles.ceoDesc}>{t('desc')}</p>
+            <p className={styles.ceoWelcome}>{t('welcome')}</p>
           </div>
 
           <div className={styles.ceoPhoto}>
@@ -72,7 +56,7 @@ export default function About() {
         </div>
 
         <div className={styles.separator}>
-          <h2 className={styles.sectionHeading}>DESCOMPLICANDO LOS PROCESOS...</h2>
+          <h2 className={styles.sectionHeading}>{t('heading')}</h2>
         </div>
 
         <div className={styles.cards}>

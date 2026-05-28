@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import styles from './News.module.css'
 import { Calendar, ArrowRight, Tag } from 'lucide-react'
 
@@ -13,33 +14,23 @@ const news = [
 ]
 
 const events = [
-  {
-    date: { day: '28', month: 'May' },
-    title: 'WeinFest',
-    desc: '28 de mayo de 2026',
-  },
-  {
-    date: { day: '25', month: 'Jun' },
-    title: '4to Aniversario SAETA',
-    desc: '25 de junio de 2026',
-  },
-  {
-    date: { day: '–', month: '–' },
-    title: 'Congreso Comercio Exterior',
-    desc: 'Próximamente',
-  },
+  { date: { day: '28', month: 'May' }, title: 'WeinFest',                  desc: '28 de mayo de 2026' },
+  { date: { day: '25', month: 'Jun' }, title: '4to Aniversario SAETA',     desc: '25 de junio de 2026' },
+  { date: { day: '–',  month: '–'   }, title: 'Congreso Comercio Exterior', desc: '' },
 ]
 
 export default function News() {
+  const t = useTranslations('news')
+
   return (
     <section id="noticias" className={`section ${styles.news}`}>
       <div className="container">
 
         <div className={styles.header}>
           <div>
-            <span className="eyebrow">Actualidad</span>
+            <span className="eyebrow">{t('eyebrow')}</span>
             <div className="lime-bar" />
-            <h2 className="section-title">Noticias &amp; Eventos</h2>
+            <h2 className="section-title">{t('heading')}</h2>
           </div>
         </div>
 
@@ -70,7 +61,7 @@ export default function News() {
                     rel="noopener noreferrer"
                     className={styles.readMore}
                   >
-                    Leer más <ArrowRight size={13} />
+                    {t('readMore')} <ArrowRight size={13} />
                   </a>
                 </div>
               </article>
@@ -78,7 +69,7 @@ export default function News() {
           </div>
 
           <div className={styles.sidebar}>
-            <h3 className={styles.sidebarTitle}>Próximos eventos</h3>
+            <h3 className={styles.sidebarTitle}>{t('upcomingEvents')}</h3>
             <div className={styles.eventsList}>
               {events.map((e) => (
                 <div key={e.title} className={styles.event}>
@@ -88,7 +79,7 @@ export default function News() {
                   </div>
                   <div>
                     <h4 className={styles.eventTitle}>{e.title}</h4>
-                    <p className={styles.eventDesc}>{e.desc}</p>
+                    <p className={styles.eventDesc}>{e.desc || t('comingSoon')}</p>
                   </div>
                 </div>
               ))}

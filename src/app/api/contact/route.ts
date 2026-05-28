@@ -1,10 +1,11 @@
 import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+export const dynamic = 'force-dynamic'
 
 export async function POST(req: Request) {
   const { nombre, empresa, email, telefono, servicio, mensaje } = await req.json()
+  const resend = new Resend(process.env.RESEND_API_KEY)
 
   await resend.emails.send({
     from: 'SAETA Web <onboarding@resend.dev>',

@@ -1,26 +1,28 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
+import { useRouter } from '@/i18n/navigation'
 import { Menu, X, Search } from 'lucide-react'
 import styles from './Navbar.module.css'
 
-const navLinks = [
-  { label: 'Inicio',    href: '#inicio' },
-  { label: 'Equipo',    href: '#team' },
-  { label: 'Servicios', href: '#servicios' },
-  { label: 'Noticias & Eventos',  href: '#noticias' },
-  { label: 'Idioma',    href: '#idiomas' },
-  { label: 'Contacto',  href: '#contacto' },
-]
-
 export default function Navbar() {
+  const t = useTranslations('nav')
   const [scrolled, setScrolled]     = useState(false)
   const [menuOpen, setMenuOpen]     = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
   const [query, setQuery]           = useState('')
   const inputRef = useRef<HTMLInputElement>(null)
   const router = useRouter()
+
+  const navLinks = [
+    { label: t('inicio'),    href: '#inicio' },
+    { label: t('equipo'),    href: '#team' },
+    { label: t('servicios'), href: '#servicios' },
+    { label: t('noticias'),  href: '#noticias' },
+    { label: t('idioma'),    href: '#idiomas' },
+    { label: t('contacto'),  href: '#contacto' },
+  ]
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60)
@@ -92,7 +94,7 @@ export default function Navbar() {
             ref={inputRef}
             type="text"
             className={styles.searchInput}
-            placeholder="Buscar en SAETA OC..."
+            placeholder={t('buscar')}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             autoComplete="off"
@@ -105,7 +107,7 @@ export default function Navbar() {
         <button
           className={styles.searchBtn}
           onClick={() => { setSearchOpen(!searchOpen); setQuery('') }}
-          aria-label="Buscar"
+          aria-label="Search"
         >
           {searchOpen ? <X size={20} /> : <Search size={20} />}
         </button>
@@ -125,7 +127,7 @@ export default function Navbar() {
           <input
             type="text"
             className={styles.drawerSearchInput}
-            placeholder="Buscar en la página..."
+            placeholder={t('buscarMovil')}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
@@ -135,7 +137,7 @@ export default function Navbar() {
         </form>
         <a href="#contacto" className={`btn btn--dark ${styles.drawerCta}`}
           onClick={(e) => { e.preventDefault(); handleLink('#contacto') }}>
-          Consulta Gratis
+          {t('consultaGratis')}
         </a>
       </div>
     </header>

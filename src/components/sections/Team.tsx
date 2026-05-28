@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import styles from './Team.module.css'
 
 const team = [
@@ -29,18 +30,17 @@ function Card({ name, role, img }: { name: string; role: string; img: string }) 
 }
 
 export default function Team() {
+  const t = useTranslations('team')
+
   return (
     <section id="team" className={styles.team}>
       <div className="container">
 
         <div className={styles.header}>
-          <span className="eyebrow">Conoce al equipo</span>
+          <span className="eyebrow">{t('eyebrow')}</span>
           <div className="lime-bar" />
-          <h2 className={styles.title}>Team SAETA</h2>
-          <p className={styles.sub}>
-            Profesionales apasionados comprometidos con descomplicar tu empresa,
-            presentes en Puebla y Ciudad de México.
-          </p>
+          <h2 className={styles.title}>{t('heading')}</h2>
+          <p className={styles.sub}>{t('sub')}</p>
         </div>
 
         <div className={styles.grid}>
@@ -50,15 +50,14 @@ export default function Team() {
         </div>
 
         <div className={styles.cta}>
-          <p className={styles.ctaText}>¿Quieres ser parte del equipo?</p>
-          
+          <p className={styles.ctaText}>{t('cta')}</p>
           <a
             href="https://www.linkedin.com/company/saeta-orientaci%C3%B3n-corporativa-s-c/jobs/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--dark"
           >
-            Ver vacantes en LinkedIn
+            {t('ctaBtn')}
           </a>
         </div>
 

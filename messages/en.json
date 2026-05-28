@@ -1,15 +1,171 @@
 {
   "nav": {
     "inicio": "Home",
-    "noticias": "News",
     "equipo": "Team",
     "servicios": "Services",
+    "noticias": "News & Events",
+    "idioma": "Language",
     "contacto": "Contact",
-    "idioma": "Language"
+    "buscar": "Search in SAETA OC...",
+    "buscarMovil": "Search on the page...",
+    "consultaGratis": "Free Consultation"
   },
-  "hero": {
-    "español": "Spanish",
-    "deutsch": "German",
-    "english": "English"
+  "about": {
+    "greeting1": "Hi! My name is ",
+    "greeting2": ", Founder and CEO of SAETA.",
+    "desc": "Our goal is to simplify your path through our international consultancy: softlanding, legal, financial, tax, foreign trade and audit services.",
+    "welcome": "Welcome!",
+    "heading": "SIMPLIFYING THE PROCESSES...",
+    "mision": {
+      "title": "Mission",
+      "text": "To provide comprehensive solutions in accounting, tax and legal advisory, as well as foreign trade and auditing — all under one roof. We position ourselves as a strategic partner that fully adapts to each client's needs at every stage of their growth. We facilitate the connection between Mexican and foreign corporate cultures, deeply understanding the challenges and requirements of each company. Our priority is to offer expert, personalized guidance, ensuring regulatory compliance, process optimization and the sustained success of our clients in a globalized environment."
+    },
+    "vision": {
+      "title": "Vision",
+      "text": "To be a leading company in all the areas we cover, standing out professionally, technically and personally, valuing each of our team members and ensuring their wellbeing. We aspire to be an example to follow."
+    },
+    "valores": {
+      "title": "Values",
+      "text": "At SAETA we are professionals by excellence. We always strive to improve individually and as a team in order to deliver premium quality work. We never forget our human values: respect, trust, punctuality, humility, honesty, transparency and above all, empathy."
+    },
+    "unete": {
+      "title": "Join Us",
+      "text": "We are looking for committed talent. If you want to be part of a company in constant international growth, check our openings on LinkedIn."
+    },
+    "nav": {
+      "organigrama": "ORG CHART",
+      "team": "SAETA TEAM",
+      "servicios": "SERVICES",
+      "contacto": "CONTACT"
+    }
+  },
+  "services": {
+    "eyebrow": "What we do",
+    "heading": "Our services",
+    "sub": "We are a leading company providing business consulting services. We customize our services to adapt to you and work as your partner. We \"simplify\" corporate processes to make them easy, clear and transparent. Main services: softlanding, legal, tax, financial, audit, payroll and foreign trade advisory.",
+    "cta": {
+      "title": "Do you need a customized service?",
+      "sub": "We adapt to your company, industry and specific objectives.",
+      "btn": "Talk to an expert"
+    },
+    "items": {
+      "softlanding": {
+        "title": "Softlanding",
+        "desc": "Incorporation, training on local legal and tax regulations and regulatory compliance, headhunting and recruitment of local employees.",
+        "tag": "International"
+      },
+      "legales": {
+        "title": "Legal",
+        "desc": "Labor, Social Security, Corporate, Commercial, Civil, M&A, Immigration, Intellectual Property, Data Protection, Anti-Money Laundering and License & Permit Management.",
+        "tag": "Legal"
+      },
+      "contabilidad": {
+        "title": "Accounting",
+        "desc": "Monthly and Annual Tax Returns, Tax Procedures, General Advisory, Transfer Pricing, Controlling, Forecasting, Budget, Planning and Invoicing.",
+        "tag": "Tax"
+      },
+      "payroll": {
+        "title": "Payroll & Treasury",
+        "desc": "Payroll, Treasury (management of bank accounts in different currencies).",
+        "tag": "Finance"
+      },
+      "comercio": {
+        "title": "Foreign Trade",
+        "desc": "Tax and customs advisory in foreign trade. Solutions in international and business logistics, compliance with official standards, Data Stage audit, fixed asset control audit and diagnosis, preventive audit of foreign trade operations. Compliance with permits and non-tariff rules.",
+        "tag": "Trade"
+      },
+      "auditoria": {
+        "title": "Audit",
+        "desc": "Financial Statement Audit, Tax Audit, International Financial Reporting Standards (IFRS).",
+        "tag": "Audit"
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "Meet the team",
+    "heading": "Team SAETA",
+    "sub": "Passionate professionals committed to simplifying your business, present in Puebla and Mexico City.",
+    "cta": "Do you want to be part of the team?",
+    "ctaBtn": "View openings on LinkedIn"
+  },
+  "stats": {
+    "clientes": { "label": "Satisfied clients", "sub": "national and international companies" },
+    "anos": { "label": "Years of experience", "sub": "in corporate consulting" },
+    "oficinas": { "label": "Offices in Mexico", "sub": "Puebla and CDMX" },
+    "areas": { "label": "Service areas", "sub": "under one roof" },
+    "tagline": "\"We are the compass your company needs to navigate the corporate world.\"",
+    "taglineAuthor": "— Daniela Nebel, Founder & CEO"
+  },
+  "news": {
+    "eyebrow": "Updates",
+    "heading": "News & Events",
+    "readMore": "Read more",
+    "upcomingEvents": "Upcoming events",
+    "comingSoon": "Coming soon"
+  },
+  "languages": {
+    "eyebrow": "Global coverage",
+    "heading": "We speak your language",
+    "sub": "SAETA operates in three languages to eliminate communication barriers in every corporate process.",
+    "es": { "code": "ES", "lang": "Español", "label": "Primary", "desc": "Our operational language. We serve national and Latin American companies with complete fluency." },
+    "en": { "code": "EN", "lang": "English", "label": "International", "desc": "We serve international companies expanding into Mexico with full English-language advisory support." },
+    "de": { "code": "DE", "lang": "Deutsch", "label": "International", "desc": "We support German-speaking companies in their expansion to Mexico and Latin America." },
+    "officesTitle": "Our offices",
+    "pueblaCity": "Puebla",
+    "pueblaAddr": "Corporativo Al Sur, Floor 8 · Blvrd de los Reyes, 72830 San Bernardino Tlaxcalancingo, Pue.",
+    "cdmxCity": "Mexico City",
+    "cdmxAddr": "German Centre, Floor 1 — Office 1-2-04 · Av. Santa Fe 170, Santa Fe, Álvaro Obregón, 01376 CDMX."
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "heading": "Let's talk about your company",
+    "sub": "Schedule a free consultation with our team. We analyze your situation at no cost and propose the most appropriate action plan.",
+    "phone": "Phone",
+    "email": "Email",
+    "formTitle": "Free consultation",
+    "formSub": "No commitment · Response in 24 hrs",
+    "nombre": "Full name *",
+    "nombrePlaceholder": "Your name",
+    "empresa": "Company *",
+    "empresaPlaceholder": "Your company name",
+    "emailLabel": "Email address *",
+    "emailPlaceholder": "email@example.com",
+    "telefono": "Phone *",
+    "telefonoPlaceholder": "+52 222 000 0000",
+    "servicio": "Service of interest *",
+    "servicioDefault": "Select a service",
+    "mensaje": "Message *",
+    "mensajePlaceholder": "Briefly tell us about your company and what you need...",
+    "submit": "Send request",
+    "required": "Please fill in all fields before submitting.",
+    "otro": "Other",
+    "successHeading": "Message sent!",
+    "successSub": "We will get in touch with you within 24 business hours.",
+    "successBtn": "Send another message",
+    "svc1": "Softlanding",
+    "svc2": "Legal",
+    "svc3": "Accounting",
+    "svc4": "Payroll & Treasury",
+    "svc5": "Foreign Trade",
+    "svc6": "Audit"
+  },
+  "footer": {
+    "tagline": "Your corporate compass. We simplify processes so you can grow.",
+    "empresa": "Company",
+    "servicios": "Services",
+    "legal": "Legal",
+    "contacto": "Contact",
+    "copyright": "All rights reserved.",
+    "inicio": "Home",
+    "sobre": "About SAETA",
+    "vacantes": "Job Openings",
+    "softlanding": "Softlanding",
+    "consultoriaLegal": "Legal Advisory",
+    "consultoriaFiscal": "Tax Advisory",
+    "comercio": "Foreign Trade",
+    "auditoria": "Audit",
+    "privacidad": "Privacy Notice",
+    "terminos": "Terms & Conditions",
+    "cookies": "Cookie Policy"
   }
 }

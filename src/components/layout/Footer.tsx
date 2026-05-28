@@ -1,32 +1,16 @@
+import { useTranslations } from 'next-intl'
 import styles from './Footer.module.css'
 
-const links = {
-  empresa: [
-    { label: 'Inicio',       href: '#inicio' },
-    { label: 'Sobre SAETA',  href: '#sobre' },
-    { label: 'Vacantes',     href: 'https://www.linkedin.com/company/saeta-orientaci%C3%B3n-corporativa-s-c/jobs/' },
-  ],
-  servicios: [
-    { label: 'Softlanding',        href: '#servicios' },
-    { label: 'Consultoría Legal',  href: '#servicios' },
-    { label: 'Consultoría Fiscal', href: '#servicios' },
-    { label: 'Comercio Exterior',  href: '#servicios' },
-    { label: 'Auditoría',          href: '#servicios' },
-  ],
-  legal: [
-    { label: 'Aviso de Privacidad',    href: '/privacidad' },
-    { label: 'Términos & Condiciones', href: '/terminos' },
-    { label: 'Política de Cookies',    href: '/cookies' },
-  ],
-  social: [
-    { label: 'LinkedIn',  href: 'https://www.linkedin.com/in/daniela-saetaoc/' },
-    { label: 'Facebook',  href: 'https://www.facebook.com/saetaoc' },
-    { label: 'Instagram', href: 'https://www.instagram.com/saeta.oc' },
-    { label: 'TikTok',    href: 'https://www.tiktok.com/@saeta384' },
-  ],
-}
+const social = [
+  { label: 'LinkedIn',  href: 'https://www.linkedin.com/in/daniela-saetaoc/' },
+  { label: 'Facebook',  href: 'https://www.facebook.com/saetaoc' },
+  { label: 'Instagram', href: 'https://www.instagram.com/saeta.oc' },
+  { label: 'TikTok',    href: 'https://www.tiktok.com/@saeta384' },
+]
 
 export default function Footer() {
+  const t = useTranslations('footer')
+
   return (
     <footer className={styles.footer}>
       <div className={styles.topLine} />
@@ -46,12 +30,9 @@ export default function Footer() {
               <span className={styles.logoSub}>OC</span>
             </div>
           </div>
-          <p className={styles.tagline}>
-            Tu brújula corporativa.<br />
-            Descomplicamos los procesos para que puedas crecer.
-          </p>
+          <p className={styles.tagline}>{t('tagline')}</p>
           <div className={styles.socialRow}>
-            {links.social.map((s) => (
+            {social.map((s) => (
               <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                 {s.label}
               </a>
@@ -60,26 +41,34 @@ export default function Footer() {
         </div>
 
         <div className={styles.col}>
-          <h4 className={styles.colTitle}>Empresa</h4>
+          <h4 className={styles.colTitle}>{t('empresa')}</h4>
           <ul className={styles.colList}>
-            {links.empresa.map((l) => <li key={l.label}><a href={l.href}>{l.label}</a></li>)}
+            <li><a href="#inicio">{t('inicio')}</a></li>
+            <li><a href="#sobre">{t('sobre')}</a></li>
+            <li><a href="https://www.linkedin.com/company/saeta-orientaci%C3%B3n-corporativa-s-c/jobs/" target="_blank" rel="noopener noreferrer">{t('vacantes')}</a></li>
           </ul>
         </div>
 
         <div className={styles.col}>
-          <h4 className={styles.colTitle}>Servicios</h4>
+          <h4 className={styles.colTitle}>{t('servicios')}</h4>
           <ul className={styles.colList}>
-            {links.servicios.map((l) => <li key={l.label}><a href={l.href}>{l.label}</a></li>)}
+            <li><a href="#servicios">{t('softlanding')}</a></li>
+            <li><a href="#servicios">{t('consultoriaLegal')}</a></li>
+            <li><a href="#servicios">{t('consultoriaFiscal')}</a></li>
+            <li><a href="#servicios">{t('comercio')}</a></li>
+            <li><a href="#servicios">{t('auditoria')}</a></li>
           </ul>
         </div>
 
         <div className={styles.col}>
-          <h4 className={styles.colTitle}>Legal</h4>
+          <h4 className={styles.colTitle}>{t('legal')}</h4>
           <ul className={styles.colList}>
-            {links.legal.map((l) => <li key={l.label}><a href={l.href}>{l.label}</a></li>)}
+            <li><a href="/privacidad">{t('privacidad')}</a></li>
+            <li><a href="/terminos">{t('terminos')}</a></li>
+            <li><a href="/cookies">{t('cookies')}</a></li>
           </ul>
           <div style={{ marginTop: '24px' }}>
-            <h4 className={styles.colTitle}>Contacto</h4>
+            <h4 className={styles.colTitle}>{t('contacto')}</h4>
             <a href="tel:+522225339586" className={styles.contactText}>+52 222 533 9586</a>
             <a href="mailto:contacto@saetaoc.com" className={styles.contactText}>contacto@saetaoc.com</a>
           </div>
@@ -90,7 +79,7 @@ export default function Footer() {
       <div className={styles.bottom}>
         <div className="container">
           <div className={styles.bottomInner}>
-            <span>© {new Date().getFullYear()} SAETA OC · Todos los derechos reservados.</span>
+            <span>© {new Date().getFullYear()} SAETA OC · {t('copyright')}</span>
           </div>
         </div>
       </div>

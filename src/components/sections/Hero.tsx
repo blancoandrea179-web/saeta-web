@@ -1,17 +1,16 @@
 'use client'
 
+import { usePathname, useRouter } from '@/i18n/navigation'
 import styles from './Hero.module.css'
 
-async function setLocale(locale: string) {
-  await fetch('/api/locale', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ locale }),
-  })
-  window.location.reload()
-}
-
 export default function Hero() {
+  const router = useRouter()
+  const pathname = usePathname()
+
+  function switchLocale(locale: string) {
+    router.replace(pathname, { locale })
+  }
+
   return (
     <section id="inicio" className={styles.hero}>
 
@@ -29,7 +28,7 @@ export default function Hero() {
 
       <div className={styles.langRow}>
 
-        <button onClick={() => setLocale('es')} className={styles.langItem}>
+        <button onClick={() => switchLocale('es')} className={styles.langItem}>
           <div className={styles.flagCircle}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="64" height="64" preserveAspectRatio="xMidYMid slice">
               <rect width="1" height="2" x="0" fill="#006847"/>
@@ -42,7 +41,7 @@ export default function Hero() {
           <span className={styles.langName}>Español</span>
         </button>
 
-        <button onClick={() => setLocale('de')} className={styles.langItem}>
+        <button onClick={() => switchLocale('de')} className={styles.langItem}>
           <div className={styles.flagCircle}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="64" height="64" preserveAspectRatio="xMidYMid slice">
               <rect width="3" height="0.667" y="0"     fill="#000000"/>
@@ -53,7 +52,7 @@ export default function Hero() {
           <span className={styles.langName}>Deutsch</span>
         </button>
 
-        <button onClick={() => setLocale('en')} className={styles.langItem}>
+        <button onClick={() => switchLocale('en')} className={styles.langItem}>
           <div className={styles.flagCircle}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 100" width="64" height="64" preserveAspectRatio="xMidYMid slice">
               <rect width="190" height="100" fill="#B22234"/>

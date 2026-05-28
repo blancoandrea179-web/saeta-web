@@ -1,15 +1,171 @@
 {
   "nav": {
     "inicio": "Inicio",
-    "noticias": "Noticias",
     "equipo": "Equipo",
     "servicios": "Servicios",
+    "noticias": "Noticias & Eventos",
+    "idioma": "Idioma",
     "contacto": "Contacto",
-    "idioma": "Idioma"
+    "buscar": "Buscar en SAETA OC...",
+    "buscarMovil": "Buscar en la página...",
+    "consultaGratis": "Consulta Gratis"
   },
-  "hero": {
-    "español": "Español",
-    "deutsch": "Deutsch",
-    "english": "English"
+  "about": {
+    "greeting1": "¡Hola! mi nombre es ",
+    "greeting2": ", fundadora y CEO de SAETA.",
+    "desc": "Nuestro objetivo es descomplicarte a través de nuestra consultoría internacional: softlanding, legal, financiera, fiscal, comercio exterior y auditoría.",
+    "welcome": "¡Bienvenidos!",
+    "heading": "DESCOMPLICANDO LOS PROCESOS...",
+    "mision": {
+      "title": "Misión",
+      "text": "Proporcionar soluciones integrales en contabilidad, asesoría fiscal y legal, así como comercio exterior y auditoría; ofreciendo todos estos servicios en un solo lugar. Nos posicionamos como un socio estratégico que se adapta al 100% a las necesidades de cada cliente en cada etapa de su crecimiento. Facilitamos la conexión entre la cultura mexicana y extranjeras, comprendiendo a fondo los desafíos y requerimientos de cada empresa. Nuestra prioridad es ofrecer una guía experta y personalizada, asegurando el cumplimiento normativo, la optimización de procesos y el éxito sostenido de nuestros clientes en un entorno globalizado."
+    },
+    "vision": {
+      "title": "Visión",
+      "text": "Ser una empresa líder en todas las áreas que abarcamos, destacándonos tanto a nivel profesional y técnico como a nivel personal, valorando a cada uno de nuestros colaboradores y asegurándonos de su bienestar. Aspiramos a ser un ejemplo a seguir."
+    },
+    "valores": {
+      "title": "Valores",
+      "text": "En SAETA somos profesionales por excelencia. Buscando siempre mejorar individualmente y como equipo para así ofrecer un trabajo de calidad premium. No olvidamos nuestros valores humanos, que incluyen: respeto, confianza, puntualidad, humildad, honestidad, transparencia y sobre todo, empatía."
+    },
+    "unete": {
+      "title": "Únete",
+      "text": "Buscamos talento comprometido. Si quieres ser parte de una empresa en constante crecimiento internacional, revisa nuestras vacantes en LinkedIn."
+    },
+    "nav": {
+      "organigrama": "ORGANIGRAMA",
+      "team": "TEAM SAETA",
+      "servicios": "SERVICIOS",
+      "contacto": "CONTACTO"
+    }
+  },
+  "services": {
+    "eyebrow": "Lo que hacemos",
+    "heading": "Nuestros servicios",
+    "sub": "Somos una empresa líder que brinda servicios de consultoría empresarial. Personalizamos nuestros servicios para adaptarnos a ti y funcionar como tu compañero. \"Descomplicamos\" los procesos corporativos para hacerlos fáciles, claros y transparentes. Los servicios principales que brindamos: softlanding, orientación legal, fiscal, financiera, auditora, payroll y comercio exterior.",
+    "cta": {
+      "title": "¿Necesitas un servicio personalizado?",
+      "sub": "Nos adaptamos a tu empresa, industria y objetivos específicos.",
+      "btn": "Habla con un experto"
+    },
+    "items": {
+      "softlanding": {
+        "title": "Softlanding",
+        "desc": "Constitución, capacitaciones para la comprensión de regulaciones legales y fiscales locales y sobre el cumplimiento normativo, Headhunting y reclutamiento de empleados locales.",
+        "tag": "Internacional"
+      },
+      "legales": {
+        "title": "Legales",
+        "desc": "Laboral, Seguridad Social, Corporativo, Mercantil, Civil, M&A, Migratorio, Propiedad Intelectual, Protección de Datos, Antilavado de Dinero y Gestión de Licencias y Permisos.",
+        "tag": "Legal"
+      },
+      "contabilidad": {
+        "title": "Contabilidad",
+        "desc": "Declaraciones Mensuales y Anuales, Trámites Fiscales, Asesoría General, Precios de Transferencia, Controlling, Forecasting, Budget, Planning y Facturación.",
+        "tag": "Fiscal"
+      },
+      "payroll": {
+        "title": "Payroll & Treasury",
+        "desc": "Nómina, Treasury (manejo de cuentas bancarias en distintas divisas).",
+        "tag": "Finanzas"
+      },
+      "comercio": {
+        "title": "Comercio Exterior",
+        "desc": "Asesoría en materia aduanera fiscal y de comercio exterior. Soluciones en logística internacional y empresarial, cumplimiento con normas oficiales, auditoría por Data Stage, auditoría y diagnóstico en el control de los activos fijos, auditoría preventiva de operaciones de comercio exterior. Cumplimiento de permisos y reglas no arancelaria.",
+        "tag": "Comercio"
+      },
+      "auditoria": {
+        "title": "Auditoría",
+        "desc": "Auditoría de Estados Financieros, Auditoría para efectos fiscales, Normas Internacionales de Información Financiera.",
+        "tag": "Auditoría"
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "Conoce al equipo",
+    "heading": "Team SAETA",
+    "sub": "Profesionales apasionados comprometidos con descomplicar tu empresa, presentes en Puebla y Ciudad de México.",
+    "cta": "¿Quieres ser parte del equipo?",
+    "ctaBtn": "Ver vacantes en LinkedIn"
+  },
+  "stats": {
+    "clientes": { "label": "Clientes satisfechos", "sub": "empresas nacionales e internacionales" },
+    "anos": { "label": "Años de experiencia", "sub": "en consultoría corporativa" },
+    "oficinas": { "label": "Oficinas en México", "sub": "Puebla y CDMX" },
+    "areas": { "label": "Áreas de servicio", "sub": "bajo un mismo techo" },
+    "tagline": "\"Somos la brújula que tu empresa necesita para navegar el mundo corporativo.\"",
+    "taglineAuthor": "— Daniela Nebel, Fundadora & CEO"
+  },
+  "news": {
+    "eyebrow": "Actualidad",
+    "heading": "Noticias & Eventos",
+    "readMore": "Leer más",
+    "upcomingEvents": "Próximos eventos",
+    "comingSoon": "Próximamente"
+  },
+  "languages": {
+    "eyebrow": "Cobertura global",
+    "heading": "Hablamos tu idioma",
+    "sub": "SAETA opera en tres idiomas para eliminar las barreras de comunicación en cada proceso corporativo.",
+    "es": { "code": "ES", "lang": "Español", "label": "Principal", "desc": "Nuestra lengua operativa. Atendemos a empresas nacionales y latinoamericanas con total fluidez." },
+    "en": { "code": "EN", "lang": "English", "label": "International", "desc": "We serve international companies expanding into Mexico with full English-language advisory support." },
+    "de": { "code": "DE", "lang": "Deutsch", "label": "International", "desc": "Wir begleiten deutschsprachige Unternehmen bei ihrer Expansion nach Mexiko und Lateinamerika." },
+    "officesTitle": "Nuestras oficinas",
+    "pueblaCity": "Puebla",
+    "pueblaAddr": "Corporativo Al Sur, Piso 8 · Blvrd de los Reyes, 72830 San Bernardino Tlaxcalancingo, Pue.",
+    "cdmxCity": "Ciudad de México",
+    "cdmxAddr": "German Centre, Piso 1 — Oficina 1-2-04 · Av. Santa Fe 170, Santa Fe, Álvaro Obregón, 01376 CDMX."
+  },
+  "contact": {
+    "eyebrow": "Ponte en contacto",
+    "heading": "Hablemos de tu empresa",
+    "sub": "Agenda una consulta gratuita con nuestro equipo. Analizamos tu situación sin costo y te proponemos el plan de acción más adecuado.",
+    "phone": "Teléfono",
+    "email": "Correo",
+    "formTitle": "Consulta gratuita",
+    "formSub": "Sin compromiso · Respuesta en 24 hrs",
+    "nombre": "Nombre completo *",
+    "nombrePlaceholder": "Tu nombre",
+    "empresa": "Empresa *",
+    "empresaPlaceholder": "Nombre de tu empresa",
+    "emailLabel": "Correo electrónico *",
+    "emailPlaceholder": "correo@ejemplo.com",
+    "telefono": "Teléfono *",
+    "telefonoPlaceholder": "+52 222 000 0000",
+    "servicio": "Servicio de interés *",
+    "servicioDefault": "Selecciona un servicio",
+    "mensaje": "Mensaje *",
+    "mensajePlaceholder": "Cuéntanos brevemente sobre tu empresa y lo que necesitas...",
+    "submit": "Enviar solicitud",
+    "required": "Por favor completa todos los campos antes de enviar.",
+    "otro": "Otro",
+    "successHeading": "¡Mensaje enviado!",
+    "successSub": "Nos pondremos en contacto contigo en menos de 24 horas hábiles.",
+    "successBtn": "Enviar otro mensaje",
+    "svc1": "Softlanding",
+    "svc2": "Legales",
+    "svc3": "Contabilidad",
+    "svc4": "Payroll & Treasury",
+    "svc5": "Comercio Exterior",
+    "svc6": "Auditoría"
+  },
+  "footer": {
+    "tagline": "Tu brújula corporativa. Descomplicamos los procesos para que puedas crecer.",
+    "empresa": "Empresa",
+    "servicios": "Servicios",
+    "legal": "Legal",
+    "contacto": "Contacto",
+    "copyright": "Todos los derechos reservados.",
+    "inicio": "Inicio",
+    "sobre": "Sobre SAETA",
+    "vacantes": "Vacantes",
+    "softlanding": "Softlanding",
+    "consultoriaLegal": "Consultoría Legal",
+    "consultoriaFiscal": "Consultoría Fiscal",
+    "comercio": "Comercio Exterior",
+    "auditoria": "Auditoría",
+    "privacidad": "Aviso de Privacidad",
+    "terminos": "Términos & Condiciones",
+    "cookies": "Política de Cookies"
   }
 }

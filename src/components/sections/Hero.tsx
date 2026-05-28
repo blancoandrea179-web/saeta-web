@@ -1,9 +1,12 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { usePathname, useRouter } from '@/i18n/navigation'
+import { MousePointerClick } from 'lucide-react'
 import styles from './Hero.module.css'
 
 export default function Hero() {
+  const t = useTranslations('hero')
   const router = useRouter()
   const pathname = usePathname()
 
@@ -68,6 +71,11 @@ export default function Hero() {
           <span className={styles.langName}>English</span>
         </button>
 
+      </div>
+
+      <div className={styles.hint}>
+        <MousePointerClick size={13} />
+        {t('clickHint')}
       </div>
 
     </section>

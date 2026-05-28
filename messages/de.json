@@ -10,6 +10,9 @@
     "buscarMovil": "Seite durchsuchen...",
     "consultaGratis": "Kostenlose Beratung"
   },
+  "hero": {
+    "clickHint": "Flagge anklicken, um die Sprache zu wechseln"
+  },
   "about": {
     "greeting1": "Hallo! Mein Name ist ",
     "greeting2": ", Gründerin und CEO von SAETA.",
@@ -110,7 +113,6 @@
     "es": { "code": "ES", "lang": "Español", "label": "Primär", "desc": "Unsere Betriebssprache. Wir betreuen nationale und lateinamerikanische Unternehmen mit vollständiger Sprachkompetenz." },
     "en": { "code": "EN", "lang": "English", "label": "International", "desc": "We serve international companies expanding into Mexico with full English-language advisory support." },
     "de": { "code": "DE", "lang": "Deutsch", "label": "International", "desc": "Wir begleiten deutschsprachige Unternehmen bei ihrer Expansion nach Mexiko und Lateinamerika." },
-    "clickHint": "Klicken Sie auf eine Karte, um die Seitensprache zu wechseln",
     "officesTitle": "Unsere Büros",
     "pueblaCity": "Puebla",
     "pueblaAddr": "Corporativo Al Sur, Etage 8 · Blvrd de los Reyes, 72830 San Bernardino Tlaxcalancingo, Pue.",

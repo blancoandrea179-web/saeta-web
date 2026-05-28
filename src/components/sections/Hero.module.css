@@ -113,6 +113,21 @@
   text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
+.hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 0 14px;
+  background: var(--dark);
+  color: rgba(255,255,255,0.45);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.hint svg { color: var(--lime); flex-shrink: 0; }
+
 @media (max-width: 640px) {
   .videoBlock { height: 40vh; min-height: 260px; }
   .flagCircle { width: 48px; height: 48px; }

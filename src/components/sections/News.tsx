@@ -27,19 +27,19 @@ const news = [
 
 const events = [
   {
-    date: { day: '12', month: 'Jun' },
-    title: 'Webinar: Precios de Transferencia 2025',
-    desc: 'Sesión gratuita con nuestro equipo fiscal.',
+    date: { day: '28', month: 'May' },
+    title: 'WeinFest',
+    desc: '28 de mayo de 2026',
   },
   {
-    date: { day: '24', month: 'Jun' },
-    title: 'Taller de Comercio Exterior en Puebla',
-    desc: 'Tres horas de formación práctica en nuestras oficinas.',
+    date: { day: '25', month: 'Jun' },
+    title: '4to Aniversario SAETA',
+    desc: '25 de junio de 2026',
   },
   {
-    date: { day: '08', month: 'Jul' },
-    title: 'Networking Empresarial SAETA-Cámaras',
-    desc: 'Conecta con empresarios nacionales e internacionales.',
+    date: { day: '–', month: '–' },
+    title: 'Congreso Comercio Exterior',
+    desc: 'Próximamente',
   },
 ]
 
@@ -48,7 +48,6 @@ export default function News() {
     <section id="noticias" className={`section ${styles.news}`}>
       <div className="container">
 
-        {/* Header */}
         <div className={styles.header}>
           <div>
             <span className="eyebrow">Actualidad</span>
@@ -60,11 +59,9 @@ export default function News() {
 
         <div className={styles.layout}>
 
-          {/* News cards */}
           <div className={styles.newsGrid}>
             {news.map((n, i) => (
               <article key={n.title} className={`${styles.card} ${i === 0 ? styles.featured : ''}`}>
-                {/* Image */}
                 <div className={styles.cardImg}>
                   <div className="img-placeholder" style={{ width: '100%', height: '100%' }}>
                     <span>{n.img}</span>
@@ -73,7 +70,6 @@ export default function News() {
                     <Tag size={11} /> {n.tag}
                   </span>
                 </div>
-                {/* Body */}
                 <div className={styles.cardBody}>
                   <span className={styles.cardDate}>
                     <Calendar size={13} /> {n.date}
@@ -88,7 +84,6 @@ export default function News() {
             ))}
           </div>
 
-          {/* Events sidebar */}
           <div className={styles.sidebar}>
             <h3 className={styles.sidebarTitle}>Próximos eventos</h3>
             <div className={styles.eventsList}>
@@ -105,9 +100,6 @@ export default function News() {
                 </div>
               ))}
             </div>
-            <a href="#contacto" className={`btn btn--primary ${styles.sidebarCta}`}>
-              Registrarme
-            </a>
           </div>
 
         </div>

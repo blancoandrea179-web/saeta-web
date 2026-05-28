@@ -23,11 +23,11 @@ export default function SocialButton() {
       </div>
       <div className={styles.mainBtn}>
         <svg viewBox="0 0 24 24" width="26" height="26" fill="none">
-          <circle cx="5" cy="12" r="2.2" fill="#2a2a2a"/>
-          <circle cx="19" cy="5" r="2.2" fill="#2a2a2a"/>
-          <circle cx="19" cy="19" r="2.2" fill="#2a2a2a"/>
-          <line x1="7" y1="11" x2="17" y2="6.5" stroke="#2a2a2a" strokeWidth="1.8" strokeLinecap="round"/>
-          <line x1="7" y1="13" x2="17" y2="17.5" stroke="#2a2a2a" strokeWidth="1.8" strokeLinecap="round"/>
+          <circle cx="5" cy="12" r="2.2" fill="#231F20"/>
+          <circle cx="19" cy="5" r="2.2" fill="#231F20"/>
+          <circle cx="19" cy="19" r="2.2" fill="#231F20"/>
+          <line x1="7" y1="11" x2="17" y2="6.5" stroke="#231F20" strokeWidth="1.8" strokeLinecap="round"/>
+          <line x1="7" y1="13" x2="17" y2="17.5" stroke="#231F20" strokeWidth="1.8" strokeLinecap="round"/>
         </svg>
         <span className={styles.mainLabel}>Síguenos</span>
       </div>

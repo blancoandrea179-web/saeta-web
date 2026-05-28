@@ -2,7 +2,7 @@ export default function Terminos() {
   return (
     <main style={{ padding: '120px 24px 80px', maxWidth: '860px', margin: '0 auto' }}>
       <h1 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '8px' }}>Términos & Condiciones</h1>
-      <div style={{ width: '48px', height: '4px', background: '#cfe000', marginBottom: '40px' }} />
+      <div style={{ width: '48px', height: '4px', background: '#D7DF23', marginBottom: '40px' }} />
 
       <h2 style={{ fontWeight: 700, marginBottom: '12px' }}>Scope of Work</h2>
       <p>SAETA Orientación Corporativa, S.C. ("SAETA") will be entitled to act on instructions submitted to it by the Client verbally, by telephone, e-mail or any other electronic communication. SAETA reserves the right to refuse the acceptance of any instruction in the event that SAETA is unable, for whatever reason, to carry out such instructions.</p>
@@ -24,7 +24,7 @@ export default function Terminos() {
       <p>This agreement shall in all respects be governed by and construed following the Laws of the Federal Republic of Mexico. All disputes, actions and other matters shall be interpreted and determined in accordance with such Law.</p>
 
       <div style={{ marginTop: '48px' }}>
-        <a href="/" style={{ color: '#cfe000', fontWeight: 700, textDecoration: 'none' }}>← Volver al inicio</a>
+        <a href="/" style={{ color: '#D7DF23', fontWeight: 700, textDecoration: 'none' }}>← Volver al inicio</a>
       </div>
     </main>
   )

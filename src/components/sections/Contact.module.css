@@ -147,7 +147,7 @@
 
 .input:focus {
   border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(26,43,74,0.1);
+  box-shadow: 0 0 0 3px rgba(35,31,32,0.1);
 }
 
 .textarea { resize: vertical; min-height: 120px; }

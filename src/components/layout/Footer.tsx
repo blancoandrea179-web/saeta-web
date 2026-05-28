@@ -21,8 +21,8 @@ export default function Footer() {
           <div className={styles.logo}>
             <div className={styles.logoChevron}>
               <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 19L16 7L28 19"  stroke="#cfe000" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M4 28L16 16L28 28" stroke="#cfe000" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M4 19L16 7L28 19"  stroke="#D7DF23" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M4 28L16 16L28 28" stroke="#D7DF23" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
             <div>

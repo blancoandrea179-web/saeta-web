@@ -24,7 +24,7 @@ export default function About() {
 
       <div className={styles.waveTop}>
         <svg viewBox="0 0 1440 110" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,55 C360,110 1080,0 1440,55 L1440,0 L0,0 Z" fill="#cfe000" />
+          <path d="M0,55 C360,110 1080,0 1440,55 L1440,0 L0,0 Z" fill="#D7DF23" />
         </svg>
       </div>
 
@@ -32,8 +32,8 @@ export default function About() {
 
         <div className={styles.centerChevron}>
           <svg width="48" height="42" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 19L16 7L28 19" stroke="#cfe000" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M4 28L16 16L28 28" stroke="#cfe000" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M4 19L16 7L28 19" stroke="#D7DF23" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M4 28L16 16L28 28" stroke="#D7DF23" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </div>
 
@@ -88,7 +88,7 @@ export default function About() {
 
       <div className={styles.waveBottom}>
         <svg viewBox="0 0 1440 110" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,55 C360,0 1080,110 1440,55 L1440,110 L0,110 Z" fill="#cfe000" />
+          <path d="M0,55 C360,0 1080,110 1440,55 L1440,110 L0,110 Z" fill="#D7DF23" />
         </svg>
       </div>
 

@@ -73,8 +73,8 @@ export default function Navbar() {
 
         <a href="/" className={styles.logo}>
           <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 19L16 7L28 19" stroke={scrolled ? '#cfe000' : '#2a2a2a'} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M4 28L16 16L28 28" stroke={scrolled ? '#cfe000' : '#2a2a2a'} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M4 19L16 7L28 19" stroke={scrolled ? '#D7DF23' : '#231F20'} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M4 28L16 16L28 28" stroke={scrolled ? '#D7DF23' : '#231F20'} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </a>
 

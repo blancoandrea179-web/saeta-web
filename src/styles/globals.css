@@ -1,39 +1,50 @@
 /* ============================================================
    SAETA OC — Global Styles
-   Paleta real: Lima #cfe000 dominante | Dark #2a2a2a | White #fff
+   Paleta oficial manual de marca | Tipografía: Raleway + Monument Extended
+   Monument Extended requiere licencia (Colophon Foundry) y auto-hospedaje.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
 
 :root {
-  /* Lima — color DOMINANTE del sitio */
-  --lime:        #cfe000;
-  --lime-hover:  #bfcc00;
-  --lime-dark:   #a8b400;
-  --lime-soft:   #eef5a0;
-  --lime-pale:   #f7fad0;
+  /* ── Paleta oficial de marca ── */
 
-  /* Dark — texto y navbar scrolled */
-  --dark:        #2a2a2a;
-  --dark-2:      #3d3d3d;
-  --dark-3:      #555555;
+  /* Color primario: Lime #D7DF23 */
+  --lime:        #D7DF23;
+  --lime-hover:  #C4CF10;
+  --lime-dark:   #A3CC00;
+  --lime-soft:   #ECE956;
+  --lime-pale:   #F6F7CA;
 
-  /* Neutrales */
+  /* Colores secundarios */
+  --navy-grey:   #4C515A;
+  --apple:       #BCD85F;
+  --pale-green:  #D3E173;
+
+  /* Negro y grises (terciarios de marca) */
+  --dark:        #231F20;
+  --dark-2:      #3A3537;
+  --dark-3:      #58595B;
+
+  /* Escala de grises de marca */
   --white:       #ffffff;
-  --off-white:   #fafaf5;
-  --gray-100:    #f2f2ee;
-  --gray-200:    #e4e4de;
-  --gray-300:    #c8c8c0;
-  --gray-500:    #888880;
-  --text-body:   #2a2a2a;
+  --off-white:   #F1F2F2;
+  --gray-100:    #E8E9EA;
+  --gray-200:    #D1D3D4;
+  --gray-300:    #A7A9AC;
+  --gray-500:    #808285;
+  --text-body:   #231F20;
 
   /* Aliases para compatibilidad con componentes */
-  --navy:        #2a2a2a;
-  --navy-light:  #3d3d3d;
-  --navy-dark:   #1a1a1a;
+  --navy:        #231F20;
+  --navy-light:  #4C515A;
+  --navy-dark:   #1A1718;
 
-  --font-sans:   'Montserrat', sans-serif;
-  --font-serif:  'Playfair Display', serif;
+  /* Tipografías de marca:
+     Monument Extended → títulos/subtítulos (requiere auto-hospedaje)
+     Raleway → textos funcionales y cuerpo */
+  --font-sans:   'Raleway', sans-serif;
+  --font-serif:  'Monument Extended', 'Raleway', sans-serif;
 
   --nav-height:  72px;
   --section-pad: 96px;
@@ -137,7 +148,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .btn--primary:hover {
   background: var(--lime-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(207,224,0,0.40);
+  box-shadow: 0 8px 24px rgba(215,223,35,0.40);
 }
 
 .btn--outline {

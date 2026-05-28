@@ -2,7 +2,7 @@ export default function Cookies() {
   return (
     <main style={{ padding: '120px 24px 80px', maxWidth: '860px', margin: '0 auto' }}>
       <h1 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '8px' }}>Política de Cookies</h1>
-      <div style={{ width: '48px', height: '4px', background: '#cfe000', marginBottom: '40px' }} />
+      <div style={{ width: '48px', height: '4px', background: '#D7DF23', marginBottom: '40px' }} />
 
       <p>En <strong>SAETA Orientación Corporativa, S.C.</strong> utilizamos cookies y tecnologías similares para mejorar la experiencia de navegación en nuestro sitio web <strong>saetaoc.com</strong>. A continuación te explicamos qué son, cómo las usamos y cómo puedes controlarlas.</p>
 
@@ -33,7 +33,7 @@ export default function Cookies() {
       <p>Si tienes dudas sobre nuestra Política de Cookies, puedes contactarnos en: <strong>contacto@saetaoc.com</strong></p>
 
       <div style={{ marginTop: '48px' }}>
-        <a href="/" style={{ color: '#cfe000', fontWeight: 700, textDecoration: 'none' }}>← Volver al inicio</a>
+        <a href="/" style={{ color: '#D7DF23', fontWeight: 700, textDecoration: 'none' }}>← Volver al inicio</a>
       </div>
     </main>
   )

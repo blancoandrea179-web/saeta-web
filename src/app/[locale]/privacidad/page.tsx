@@ -4,7 +4,7 @@ export default function Privacidad() {
   return (
     <main style={{ padding: '120px 24px 80px', maxWidth: '860px', margin: '0 auto' }}>
       <h1 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '8px' }}>Aviso de Privacidad</h1>
-      <div style={{ width: '48px', height: '4px', background: '#cfe000', marginBottom: '40px' }} />
+      <div style={{ width: '48px', height: '4px', background: '#D7DF23', marginBottom: '40px' }} />
 
       <p><strong>SAETA ORIENTACIÓN CORPORATIVA, S.C.</strong>, con domicilio ubicado en Vía Atlixcáyotl 5208, Torre JV II piso 13, Col. San Martinito, San Andrés Cholula, Puebla, C.P. 72810, suscribe el presente aviso de privacidad en cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (en lo sucesivo la "Ley").</p>
 
@@ -29,7 +29,7 @@ export default function Privacidad() {
       <p style={{ marginTop: '20px' }}>Nos queda reservado el derecho de efectuar, en cualquier tiempo, modificaciones o actualizaciones al presente aviso de privacidad. Las modificaciones que se efectúen se pondrán a disposición del público a través de anuncios visibles en nuestros establecimientos, o vía nuestra página de internet.</p>
 
       <div style={{ marginTop: '48px' }}>
-        <a href="/" style={{ color: '#cfe000', fontWeight: 700, textDecoration: 'none' }}>← Volver al inicio</a>
+        <a href="/" style={{ color: '#D7DF23', fontWeight: 700, textDecoration: 'none' }}>← Volver al inicio</a>
       </div>
     </main>
   )

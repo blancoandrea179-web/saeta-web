@@ -8,7 +8,7 @@
   position: absolute;
   bottom: -100px; left: -100px;
   width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(200,229,58,0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(215,223,35,0.05) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -57,15 +57,15 @@
 
 .card:hover {
   background: rgba(255,255,255,0.08);
-  border-color: rgba(200,229,58,0.4);
+  border-color: rgba(215,223,35,0.4);
   transform: translateY(-4px);
 }
 
 .card:hover::before { transform: scaleX(1); }
 
 .cardActive {
-  background: rgba(207,224,0,0.10) !important;
-  border-color: rgba(207,224,0,0.55) !important;
+  background: rgba(215,223,35,0.10) !important;
+  border-color: rgba(215,223,35,0.55) !important;
 }
 
 .cardActive::before { transform: scaleX(1); }
@@ -91,8 +91,8 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 3px 10px;
-  background: rgba(200,229,58,0.15);
-  border: 1px solid rgba(200,229,58,0.3);
+  background: rgba(215,223,35,0.15);
+  border: 1px solid rgba(215,223,35,0.3);
   color: var(--lime);
   border-radius: 100px;
 }

@@ -15,8 +15,8 @@ export default function Icon() {
         justifyContent: 'center',
       }}>
         <svg width="22" height="20" viewBox="0 0 32 28" fill="none">
-          <path d="M4 19L16 7L28 19" stroke="#cfe000" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M4 28L16 16L28 28" stroke="#cfe000" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M4 19L16 7L28 19" stroke="#D7DF23" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M4 28L16 16L28 28" stroke="#D7DF23" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
     ),

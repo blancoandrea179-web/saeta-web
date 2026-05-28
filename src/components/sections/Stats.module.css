@@ -9,7 +9,7 @@
   position: absolute;
   top: -200px; right: -200px;
   width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(200,229,58,0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(215,223,35,0.07) 0%, transparent 70%);
   pointer-events: none;
 }
 

@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "noticias": "News",
+    "equipo": "Team",
+    "servicios": "Services",
+    "contacto": "Contact",
+    "idioma": "Language"
+  },
+  "hero": {
+    "español": "Spanish",
+    "deutsch": "German",
+    "english": "English"
+  }
+}

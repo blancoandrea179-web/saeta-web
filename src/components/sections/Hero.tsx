@@ -1,4 +1,15 @@
+'use client'
+
 import styles from './Hero.module.css'
+
+async function setLocale(locale: string) {
+  await fetch('/api/locale', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ locale }),
+  })
+  window.location.reload()
+}
 
 export default function Hero() {
   return (
@@ -18,7 +29,7 @@ export default function Hero() {
 
       <div className={styles.langRow}>
 
-        <a href="#" className={styles.langItem}>
+        <button onClick={() => setLocale('es')} className={styles.langItem}>
           <div className={styles.flagCircle}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="64" height="64" preserveAspectRatio="xMidYMid slice">
               <rect width="1" height="2" x="0" fill="#006847"/>
@@ -29,9 +40,9 @@ export default function Hero() {
             </svg>
           </div>
           <span className={styles.langName}>Español</span>
-        </a>
+        </button>
 
-        <a href="#" className={styles.langItem}>
+        <button onClick={() => setLocale('de')} className={styles.langItem}>
           <div className={styles.flagCircle}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" width="64" height="64" preserveAspectRatio="xMidYMid slice">
               <rect width="3" height="0.667" y="0"     fill="#000000"/>
@@ -40,9 +51,9 @@ export default function Hero() {
             </svg>
           </div>
           <span className={styles.langName}>Deutsch</span>
-        </a>
+        </button>
 
-        <a href="#" className={styles.langItem}>
+        <button onClick={() => setLocale('en')} className={styles.langItem}>
           <div className={styles.flagCircle}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 100" width="64" height="64" preserveAspectRatio="xMidYMid slice">
               <rect width="190" height="100" fill="#B22234"/>
@@ -56,7 +67,7 @@ export default function Hero() {
             </svg>
           </div>
           <span className={styles.langName}>English</span>
-        </a>
+        </button>
 
       </div>
 

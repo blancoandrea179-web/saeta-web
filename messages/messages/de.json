@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "inicio": "Startseite",
+    "noticias": "Neuigkeiten",
+    "equipo": "Team",
+    "servicios": "Dienstleistungen",
+    "contacto": "Kontakt",
+    "idioma": "Sprache"
+  },
+  "hero": {
+    "español": "Spanisch",
+    "deutsch": "Deutsch",
+    "english": "Englisch"
+  }
+}

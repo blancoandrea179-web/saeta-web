@@ -35,15 +35,25 @@ export default function News() {
     <section id="noticias" className={`section ${styles.news}`}>
       <div className="container">
 
+        <div className={styles.header}>
+          <div>
+            <span className="eyebrow">Actualidad</span>
+            <div className="lime-bar" />
+            <h2 className="section-title">Noticias &amp; Eventos</h2>
+          </div>
+        </div>
+
         <div className={styles.layout}>
 
           <div className={styles.newsGrid}>
             {news.map((n, i) => (
               <article key={n.title} className={`${styles.card} ${i === 0 ? styles.featured : ''}`}>
                 <div className={styles.cardImg}>
-                  <div className="img-placeholder" style={{ width: '100%', height: '100%' }}>
-                    <span>{n.img}</span>
-                  </div>
+                  <img
+                    src={n.img}
+                    alt={n.title}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
                   <span className={styles.cardTag}>
                     <Tag size={11} /> {n.tag}
                   </span>
@@ -54,6 +64,7 @@ export default function News() {
                   </span>
                   <h3 className={styles.cardTitle}>{n.title}</h3>
                   <p className={styles.cardExcerpt}>{n.excerpt}</p>
+                  
                   <a
                     href={n.href}
                     target="_blank"

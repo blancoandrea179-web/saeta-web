@@ -7,11 +7,11 @@ import styles from './Navbar.module.css'
 
 const navLinks = [
   { label: 'Inicio',    href: '#inicio' },
-  { label: 'Noticias',  href: '#noticias' },
   { label: 'Equipo',    href: '#team' },
   { label: 'Servicios', href: '#servicios' },
-  { label: 'Contacto',  href: '#contacto' },
+  { label: 'Noticias & Eventos',  href: '#noticias' },
   { label: 'Idioma',    href: '#idiomas' },
+  { label: 'Contacto',  href: '#contacto' },
 ]
 
 export default function Navbar() {

@@ -63,7 +63,12 @@ const events: EventData[] = [
     title: 'Brindis Año Nuevo CAMEXA',
     date: '',
     description: '',
-    images: [],
+    images: [
+      '/images/camexa1.jpeg',
+      '/images/camexa2.jpeg',
+      '/images/camexa3.jpeg',
+      '/images/camexa4.jpeg',
+    ],
   },
   {
     id: 'conferencias-daniela',

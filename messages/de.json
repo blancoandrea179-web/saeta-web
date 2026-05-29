@@ -104,7 +104,11 @@
     "heading": "Nachrichten & Events",
     "readMore": "Weiterlesen",
     "upcomingEvents": "Bevorstehende Events",
-    "comingSoon": "Demnächst"
+    "comingSoon": "Demnächst",
+    "tabNews": "Nachrichten",
+    "tabEvents": "Events",
+    "imageComing": "Bild folgt",
+    "descComing": "Beschreibung folgt..."
   },
   "languages": {
     "eyebrow": "Globale Abdeckung",

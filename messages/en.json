@@ -104,7 +104,11 @@
     "heading": "News & Events",
     "readMore": "Read more",
     "upcomingEvents": "Upcoming events",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "tabNews": "News",
+    "tabEvents": "Events",
+    "imageComing": "Image coming soon",
+    "descComing": "Description coming soon..."
   },
   "languages": {
     "eyebrow": "Global coverage",

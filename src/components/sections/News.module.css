@@ -9,6 +9,38 @@
   gap: 16px;
 }
 
+/* ── Tabs ── */
+.tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--off-white);
+  border-radius: 100px;
+  padding: 4px;
+  align-self: center;
+}
+
+.tab {
+  padding: 9px 28px;
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.tab:hover { color: var(--navy); }
+
+.tabActive {
+  background: var(--navy);
+  color: var(--white) !important;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 1fr 320px;
@@ -206,6 +238,87 @@
   font-size: 0.8rem;
 }
 
+/* ── Events grid (Eventos tab) ── */
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.eventCard {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--gray-100);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.25s, transform 0.25s var(--ease-out);
+}
+
+.eventCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.eventCardImg {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.eventCardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eventCardImgPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--gray-300);
+  background: linear-gradient(135deg, #f0f3f7 0%, #e4eaf1 100%);
+}
+
+.eventCardImgPlaceholder span {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.eventCardBody {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.eventCardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.4;
+}
+
+.eventCardDesc {
+  font-size: 0.88rem;
+  color: var(--gray-500);
+  line-height: 1.7;
+}
+
+.eventCardDescPlaceholder {
+  font-size: 0.84rem;
+  color: var(--gray-300);
+  line-height: 1.6;
+  font-style: italic;
+}
+
 /* ── Responsive ── */
 @media (max-width: 1024px) {
   .layout { grid-template-columns: 1fr; }
@@ -216,4 +329,7 @@
   .newsGrid { grid-template-columns: 1fr; }
   .featured { display: flex; flex-direction: column; }
   .featured .cardImg { height: 200px; border-radius: 0; }
+  .eventsGrid { grid-template-columns: 1fr; }
+  .tabs { width: 100%; }
+  .tab { flex: 1; text-align: center; padding: 9px 16px; }
 }

@@ -41,12 +41,12 @@ const events: EventData[] = [
     date: '',
     description: '',
     images: [
+      '/images/oktuber6.jpeg',
       '/images/oktober1.jpeg',
       '/images/oktuber2.jpeg',
       '/images/oktuber3.jpeg',
       '/images/oktuber4.jpeg',
       '/images/oktuber5.jpeg',
-      '/images/oktuber6.jpeg',
     ],
   },
   {

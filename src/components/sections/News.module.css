@@ -261,7 +261,7 @@
 
 .eventCardImg {
   position: relative;
-  height: 240px;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -270,6 +270,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 65%;
   animation: imgFade 0.3s ease;
 }
 

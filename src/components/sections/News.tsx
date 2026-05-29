@@ -3,9 +3,18 @@
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import styles from './News.module.css'
-import { Calendar, ArrowRight, Tag, ImagePlus } from 'lucide-react'
+import { Calendar, ArrowRight, Tag, ImagePlus, ChevronLeft, ChevronRight } from 'lucide-react'
 
 type Tab = 'noticias' | 'eventos'
+
+interface EventData {
+  id: string
+  tag: string
+  title: string
+  date: string
+  description: string
+  images: string[]
+}
 
 const news = [
   {
@@ -24,14 +33,21 @@ const upcomingEvents = [
   { date: { day: '–',  month: '–'   }, title: 'Congreso Comercio Exterior', desc: '' },
 ]
 
-const events = [
+const events: EventData[] = [
   {
     id: 'oktoberfest',
     tag: 'Evento',
     title: 'Oktoberfest',
     date: '',
     description: '',
-    img: '',
+    images: [
+      '/images/oktober1.jpeg',
+      '/images/oktuber2.jpeg',
+      '/images/oktuber3.jpeg',
+      '/images/oktuber4.jpeg',
+      '/images/oktuber5.jpeg',
+      '/images/oktuber6.jpeg',
+    ],
   },
   {
     id: 'cena-gala-camexa',
@@ -39,7 +55,7 @@ const events = [
     title: 'Cena Gala CAMEXA',
     date: '',
     description: '',
-    img: '',
+    images: [],
   },
   {
     id: 'brindis-camexa',
@@ -47,7 +63,7 @@ const events = [
     title: 'Brindis Año Nuevo CAMEXA',
     date: '',
     description: '',
-    img: '',
+    images: [],
   },
   {
     id: 'conferencias-daniela',
@@ -55,9 +71,78 @@ const events = [
     title: 'Conferencias Daniela Nebel',
     date: '',
     description: '',
-    img: '',
+    images: [],
   },
 ]
+
+function EventCard({ e, t }: { e: EventData; t: ReturnType<typeof useTranslations<'news'>> }) {
+  const [imgIdx, setImgIdx] = useState(0)
+  const hasImages = e.images.length > 0
+  const hasMultiple = e.images.length > 1
+
+  const prev = (ev: React.MouseEvent) => {
+    ev.stopPropagation()
+    setImgIdx(i => (i - 1 + e.images.length) % e.images.length)
+  }
+  const next = (ev: React.MouseEvent) => {
+    ev.stopPropagation()
+    setImgIdx(i => (i + 1) % e.images.length)
+  }
+
+  return (
+    <article className={styles.eventCard}>
+      <div className={styles.eventCardImg}>
+        {hasImages ? (
+          <>
+            <img key={imgIdx} src={e.images[imgIdx]} alt={`${e.title} ${imgIdx + 1}`} />
+            {hasMultiple && (
+              <>
+                <button className={`${styles.carouselBtn} ${styles.carouselBtnPrev}`} onClick={prev} aria-label="Imagen anterior">
+                  <ChevronLeft size={18} />
+                </button>
+                <button className={`${styles.carouselBtn} ${styles.carouselBtnNext}`} onClick={next} aria-label="Imagen siguiente">
+                  <ChevronRight size={18} />
+                </button>
+                <div className={styles.carouselDots}>
+                  {e.images.map((_, i) => (
+                    <button
+                      key={i}
+                      className={`${styles.dot} ${i === imgIdx ? styles.dotActive : ''}`}
+                      onClick={(ev) => { ev.stopPropagation(); setImgIdx(i) }}
+                      aria-label={`Imagen ${i + 1}`}
+                    />
+                  ))}
+                </div>
+                <span className={styles.carouselCounter}>{imgIdx + 1} / {e.images.length}</span>
+              </>
+            )}
+          </>
+        ) : (
+          <div className={styles.eventCardImgPlaceholder}>
+            <ImagePlus size={38} strokeWidth={1.2} />
+            <span>{t('imageComing')}</span>
+          </div>
+        )}
+        <span className={styles.cardTag}>
+          <Tag size={11} /> {e.tag}
+        </span>
+      </div>
+      <div className={styles.eventCardBody}>
+        {e.date && (
+          <span className={styles.cardDate}>
+            <Calendar size={13} /> {e.date}
+          </span>
+        )}
+        <h3 className={styles.eventCardTitle}>{e.title}</h3>
+        {e.description ? (
+          <p className={styles.eventCardDesc}>{e.description}</p>
+        ) : (
+          <p className={styles.eventCardDescPlaceholder}>{t('descComing')}</p>
+        )}
+      </div>
+    </article>
+  )
+}
 
 export default function News() {
   const t = useTranslations('news')
@@ -149,34 +234,7 @@ export default function News() {
         {activeTab === 'eventos' && (
           <div className={styles.eventsGrid}>
             {events.map((e) => (
-              <article key={e.id} className={styles.eventCard}>
-                <div className={styles.eventCardImg}>
-                  {e.img ? (
-                    <img src={e.img} alt={e.title} />
-                  ) : (
-                    <div className={styles.eventCardImgPlaceholder}>
-                      <ImagePlus size={38} strokeWidth={1.2} />
-                      <span>{t('imageComing')}</span>
-                    </div>
-                  )}
-                  <span className={styles.cardTag}>
-                    <Tag size={11} /> {e.tag}
-                  </span>
-                </div>
-                <div className={styles.eventCardBody}>
-                  {e.date && (
-                    <span className={styles.cardDate}>
-                      <Calendar size={13} /> {e.date}
-                    </span>
-                  )}
-                  <h3 className={styles.eventCardTitle}>{e.title}</h3>
-                  {e.description ? (
-                    <p className={styles.eventCardDesc}>{e.description}</p>
-                  ) : (
-                    <p className={styles.eventCardDescPlaceholder}>{t('descComing')}</p>
-                  )}
-                </div>
-              </article>
+              <EventCard key={e.id} e={e} t={t} />
             ))}
           </div>
         )}

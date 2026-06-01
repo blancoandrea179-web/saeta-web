@@ -50,14 +50,6 @@ const events: EventData[] = [
     ],
   },
   {
-    id: 'cena-gala-camexa',
-    tag: 'CAMEXA',
-    title: 'Cena Gala CAMEXA',
-    date: '',
-    description: '',
-    images: [],
-  },
-  {
     id: 'brindis-camexa',
     tag: 'CAMEXA',
     title: 'Brindis Año Nuevo CAMEXA',
@@ -69,14 +61,6 @@ const events: EventData[] = [
       '/images/camexa3.jpeg',
       '/images/camexa4.jpeg',
     ],
-  },
-  {
-    id: 'conferencias-daniela',
-    tag: 'Conferencia',
-    title: 'Conferencias Daniela Nebel',
-    date: '',
-    description: '',
-    images: [],
   },
   {
     id: 'expocomer-panama',

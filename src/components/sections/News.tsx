@@ -78,6 +78,19 @@ const events: EventData[] = [
     description: '',
     images: [],
   },
+  {
+    id: 'expocomer-panama',
+    tag: 'Feria',
+    title: 'Expocomer Panamá',
+    date: '',
+    description: '',
+    images: [
+      '/images/expocomer 1.jpeg',
+      '/images/expocomer 2.jpeg',
+      '/images/expocomer 3.jpeg',
+      '/images/expocomer 4.jpeg',
+    ],
+  },
 ]
 
 function EventCard({ e, t }: { e: EventData; t: ReturnType<typeof useTranslations<'news'>> }) {

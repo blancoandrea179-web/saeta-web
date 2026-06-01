@@ -81,7 +81,7 @@ const events: EventData[] = [
   {
     id: 'expocomer-panama',
     tag: 'Feria',
-    title: 'Expocomer Panamá',
+    title: 'Expocomer Panamá 2026',
     date: '',
     description: '',
     images: [
@@ -89,6 +89,17 @@ const events: EventData[] = [
       '/images/expocomer 2.jpeg',
       '/images/expocomer 3.jpeg',
       '/images/expocomer 4.jpeg',
+    ],
+  },
+   {
+    id: 'panelista-congreso',
+    tag: 'Congreso',
+    title: 'Panelista de Congreso Mexicano de Repuestos Automotrices',
+    date: '',
+    description: '',
+    images: [
+      '/images/congreso 1.jpeg',
+      '/images/congreso 2.jpeg',
     ],
   },
 ]

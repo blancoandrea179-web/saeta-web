@@ -28,7 +28,6 @@ const news = [
 ]
 
 const upcomingEvents = [
-  { date: { day: '28', month: 'May' }, title: 'WeinFest',                   desc: '28 de mayo de 2026' },
   { date: { day: '25', month: 'Jun' }, title: '4to Aniversario SAETA',      desc: '25 de junio de 2026' },
   { date: { day: '15', month: 'Oct' }, title: 'Oktoberfest',                 desc: '15 de octubre de 2026' },
 ]

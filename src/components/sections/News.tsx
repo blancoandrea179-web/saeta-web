@@ -30,7 +30,7 @@ const news = [
 const upcomingEvents = [
   { date: { day: '28', month: 'May' }, title: 'WeinFest',                   desc: '28 de mayo de 2026' },
   { date: { day: '25', month: 'Jun' }, title: '4to Aniversario SAETA',      desc: '25 de junio de 2026' },
-  { date: { day: '–',  month: '–'   }, title: 'Congreso Comercio Exterior', desc: '' },
+  { date: { day: '15', month: 'Oct' }, title: 'Oktoberfest',                 desc: '15 de octubre de 2026' },
 ]
 
 const events: EventData[] = [
@@ -147,11 +147,6 @@ function EventCard({ e, t }: { e: EventData; t: ReturnType<typeof useTranslation
           </span>
         )}
         <h3 className={styles.eventCardTitle}>{e.title}</h3>
-        {e.description ? (
-          <p className={styles.eventCardDesc}>{e.description}</p>
-        ) : (
-          <p className={styles.eventCardDescPlaceholder}>{t('descComing')}</p>
-        )}
       </div>
     </article>
   )

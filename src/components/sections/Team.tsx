@@ -3,7 +3,6 @@ import styles from './Team.module.css'
 
 const team = [
   { name: 'Daniela Nebel',    role: 'CEO & Founder. Attorney-at-Law',       img: '/images/Foto dani (1).png' },
-  { name: 'Maritza Cantú',    role: 'CFO, Treasury & Billing Manager',      img: '/images/Maritza Cantú - CFO, Treasury & Billing Manager.png' },
   { name: 'Edith Chávez',     role: 'CAO, Human Resources Manager',         img: '/images/Edith Chávez - CAO Human Resources Manager.png' },
   { name: 'Nayeli Martinez',  role: 'Legal Manager, Attorney-at-Law',       img: '/images/Nayeli 2.png' },
   { name: 'Leslie Soto',      role: 'MKT & Office Manager',                 img: '/images/Leslie Soto - Marketing Manager.png' },

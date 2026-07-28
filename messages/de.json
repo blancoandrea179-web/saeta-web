@@ -45,44 +45,77 @@
   "services": {
     "eyebrow": "Was wir tun",
     "heading": "Unsere Leistungen",
-    "sub": "Wir sind ein führendes Unternehmen für Unternehmensberatung. Wir passen unsere Leistungen individuell an und fungieren als Ihr Partner. Wir \"vereinfachen\" Unternehmensprozesse und machen sie einfach, klar und transparent. Unsere Kernleistungen: Softlanding, Recht, Steuern, Finanzen, Wirtschaftsprüfung, Payroll und Außenhandel.",
+    "sub": "Wir vereinfachen die Unternehmensprozesse Ihres Unternehmens. Entdecken Sie jeden Leistungsbereich und die Details.",
+    "detailsLink": "Details ansehen",
+    "detailEyebrow": "Leistungsdetail",
+    "detailBack": "Zurück zu den Leistungen",
     "cta": {
       "title": "Benötigen Sie eine maßgeschneiderte Lösung?",
       "sub": "Wir passen uns Ihrem Unternehmen, Ihrer Branche und Ihren spezifischen Zielen an.",
       "btn": "Mit einem Experten sprechen"
     },
-    "items": {
-      "softlanding": {
-        "title": "Softlanding",
-        "desc": "Unternehmensgründung, Schulungen zu lokalen Rechts- und Steuervorschriften sowie Compliance, Headhunting und Rekrutierung lokaler Mitarbeiter.",
-        "tag": "International"
+    "categories": [
+      {
+        "id": "financieros",
+        "title": "Finanzdienstleistungen",
+        "tag": "Finanzen",
+        "desc": "Buchhaltung, Controlling, Rechnungsstellung, finanzielle Risiken und Steuern, um Ihre Finanzen klar und konform zu halten.",
+        "items": [
+          { "title": "Buchhaltung", "points": ["Monatliche Buchhaltungsdienste", "Elektronische Buchhaltung", "Finanzberichte mit Unternehmensinformationen", "Prozessimplementierung"] },
+          { "title": "Controlling", "points": ["Liquiditätsberechnungen", "Budget und Prognosen", "Kostenanalyse und -reduzierung"] },
+          { "title": "Rechnungsstellung", "points": ["Erstellung individueller Rechnungen mit Kunden-, Produkt-, Leistungs- und Preisinformationen", "Sicherstellung, dass Rechnungen den lokalen Steuervorschriften entsprechen", "Elektronischer Versand von Rechnungen an Kunden per E-Mail oder über Plattformen"] },
+          { "title": "Finanzielle Risiken", "points": ["Monatliche und jährliche Überprüfungen", "Betrugserkennung", "Schulung des Finanzpersonals", "Identifizierung von Verbesserungsmöglichkeiten"] },
+          { "title": "Steuern", "points": ["Monatliche und jährliche Steuerberechnungen", "DIOT", "Elektronische Buchhaltung", "Klärung von SAT-Anforderungen und internen Prüfungen, Steuererstattungsanträge für Guthaben, Verrechnungspreise", "Berechnung von D3 und D5", "All dies sowohl für natürliche als auch juristische Personen"] }
+        ]
       },
-      "legales": {
-        "title": "Recht",
-        "desc": "Arbeitsrecht, Sozialversicherung, Gesellschaftsrecht, Handelsrecht, Zivilrecht, M&A, Migrationsrecht, Geistiges Eigentum, Datenschutz, Geldwäscheprävention und Lizenz- & Genehmigungsmanagement.",
-        "tag": "Recht"
+      {
+        "id": "nomina",
+        "title": "Lohnabrechnung und Treasury",
+        "tag": "Lohn",
+        "desc": "Umfassende Lohn- und Treasury-Verwaltung: An- und Abmeldungen, Lohnberechnung, Steuern, IMSS, ISN, Zahlungen und Online-Banking.",
+        "items": [
+          { "title": "An- und Abmeldung von Mitarbeitern", "points": ["Vollständiger Prozess der Aufnahme oder Abmeldung von Mitarbeitern aus der Unternehmenslohnabrechnung"] },
+          { "title": "Gehaltsänderungen", "points": ["Erhöhung oder Senkung des Gehalts eines Mitarbeiters gemäß den Unternehmensvorgaben"] },
+          { "title": "Lohnberechnung", "points": ["Vollständiger Prozess der Berechnung von Mitarbeitergehältern und -abzügen gemäß den allgemeinen Vorschriften"] },
+          { "title": "Abfindungen und Endabrechnungen", "points": ["Vollständiger Prozess der Berechnung und Zahlung des Betrags für einen Mitarbeiter, der in Rente geht oder entlassen wird"] },
+          { "title": "Berechnung der Risikoprämie", "points": ["Vollständiger Prozess der Berechnung von Mitarbeitergehältern und -abzügen zur Erstellung der Lohnabrechnung"] },
+          { "title": "Steuerberechnung", "points": ["Berechnung der entsprechenden auf Mitarbeitergehälter zu zahlenden Steuern"] },
+          { "title": "IMSS (Mexikanisches Sozialversicherungsinstitut)", "points": ["Registrierung und Berechnung der Verpflichtungen des Unternehmens gegenüber dem IMSS"] },
+          { "title": "ISN (Lohnsteuer)", "points": ["Lohnsteuer, die Arbeitgeber auf Basis der Gesamtvergütung ihrer Mitarbeiter zahlen müssen"] },
+          { "title": "Treasury", "points": ["Überwachung und Prognose von Geldzu- und -abflüssen, um sicherzustellen, dass das Unternehmen über ausreichend Liquidität verfügt", "Erstellung regelmäßiger Berichte über die Finanzlage und die Cashflows"] },
+          { "title": "Zahlungen", "points": ["Überprüfung und Planung von Zahlungen an Lieferanten", "Lohnzahlungen", "Zahlungen in verschiedenen Währungen"] },
+          { "title": "Online-Banking", "points": ["Betrieb aller Online-Banking-Systeme zusammen mit den von ihnen verwalteten Diensten und Produkten", "Gemeinschaftliche Tokens für mehr Sicherheit bei der Ressourcenverwaltung"] }
+        ]
       },
-      "contabilidad": {
-        "title": "Buchhaltung",
-        "desc": "Monatliche und jährliche Steuererklärungen, steuerliche Anträge, allgemeine Beratung, Verrechnungspreise, Controlling, Forecasting, Budget, Planung und Rechnungsstellung.",
-        "tag": "Steuern"
-      },
-      "payroll": {
-        "title": "Payroll & Treasury",
-        "desc": "Lohnabrechnung, Treasury (Verwaltung von Bankkonten in verschiedenen Währungen).",
-        "tag": "Finanzen"
-      },
-      "comercio": {
+      {
+        "id": "comercio",
         "title": "Außenhandel",
-        "desc": "Zoll- und steuerrechtliche Beratung im Außenhandel. Internationale Logistiklösungen, Einhaltung offizieller Normen, Data-Stage-Prüfung, Anlagevermögenskontrolle, präventive Prüfung von Außenhandelsoperationen. Einhaltung von Genehmigungen und nicht-tarifären Regeln.",
-        "tag": "Handel"
+        "tag": "Handel",
+        "desc": "IMMEX, NOMs und Genehmigungen, Data-Stage-Prüfung, Anlagevermögenskontrolle, Zollberatung und Logistikprozess.",
+        "items": [
+          { "title": "Einhaltung der Anforderungen des IMMEX-Programms", "points": [] },
+          { "title": "Einhaltung mexikanischer offizieller Normen (NOMs), COFEPRIS- und SEDENA-Genehmigungen", "points": [] },
+          { "title": "Prüfung mittels DATA STAGE", "points": ["Validierung aktueller und vergangener Vorgänge", "Identifizierung nicht autorisierter Vorgänge", "Präventive interne Prüfungen", "Vorbereitung der Dokumentation für Mehrwertsteuererstattungen", "Überprüfung von Informationen in spezifischen Anhängen (Anhang 24 und Anhang 30)"] },
+          { "title": "Prüfung und Diagnose der Anlagevermögenskontrolle", "points": ["Abstimmung von Bestellungen und Rechnungen", "Bericht über nicht identifizierte Anlagegüter", "Informationsüberprüfung", "Akten-Integration", "Ergebnisbericht"] },
+          { "title": "Präventive Außenhandelsprüfung", "points": ["Dokumentenprüfung", "Diagnose und Gutachten", "Erkennung von Chancen", "Erstellung von Alternativen", "Lösungsverfolgung", "Kontinuierliche Nachverfolgung"] },
+          { "title": "Beratung in Zoll-, Steuer- und Außenhandelsfragen", "points": ["Strategische Planung", "Permanente Beratung", "Gesetzliche Aktualisierungen", "Verfolgung von Verpflichtungen", "Aktenberatung", "Einhaltung der Ursprungsregeln"] },
+          { "title": "Logistikprozess", "points": ["Koordination mit Logistikanbietern, einschließlich Transport- und Zolldiensten", "Überwachung von Sendungen während des gesamten Lieferprozesses", "Unterstützung zur Sicherstellung der Zoll-Compliance"] }
+        ]
       },
-      "auditoria": {
-        "title": "Wirtschaftsprüfung",
-        "desc": "Abschlussprüfung, steuerliche Prüfung, Internationale Rechnungslegungsstandards (IFRS).",
-        "tag": "Prüfung"
+      {
+        "id": "legales",
+        "title": "Rechtsdienstleistungen",
+        "tag": "Recht",
+        "desc": "Gesellschafts-, Arbeits-, Zivil- und Handelsrecht, Migrationsrecht und geistiges Eigentum zum Schutz Ihres Unternehmens.",
+        "items": [
+          { "title": "Gesellschaftsrecht", "points": ["Unternehmensgründung", "Registrierung von Betriebsstätten und/oder Repräsentanzen", "Compliance-Prüfung", "REPSE-Registrierung", "Datenschutz", "RFC-Registrierung", "RNIE-Registrierung und -Meldungen", "IMSS-Registrierung", "Registrierung beim Finanzministerium für die ISN-Zahlung"] },
+          { "title": "Arbeitsrecht", "points": ["Einzelverträge", "Kollektivverträge", "Verwaltungsregistrierungen", "Registrierung bei INE und Fonacot", "Arbeitsrechtsstreit und/oder -schlichtung", "Abfindungsprozesse für Mitarbeiter", "Verwaltung von Leistungen: Gutscheine, Versicherungen, Sparfonds, Gehaltskarten"] },
+          { "title": "Zivil- und Handelsrecht", "points": ["Erstellung von Verträgen: Dienstleistung, Kauf-Verkauf, Abtretung und Miete", "Schuldbriefe, Umstandsbrief", "Geschäftsbedingungen", "Vertraulichkeitsvereinbarung", "Rechtsstreit"] },
+          { "title": "Migrationsrecht", "points": ["Antrag auf Arbeitgeberbescheinigung", "Visaverfahren: befristet und dauerhaft", "Antrag auf Ein- und Ausreisegenehmigungen", "Meldung jeglicher Änderung der Situation des Ausländers und/oder des Unternehmens"] },
+          { "title": "Geistiges Eigentum", "points": ["Markenregistrierung", "Beilegung von Streitigkeiten über missbräuchliche Markennutzung"] }
+        ]
       }
-    }
+    ]
   },
   "team": {
     "eyebrow": "Lernen Sie das Team kennen",

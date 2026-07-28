@@ -45,44 +45,77 @@
   "services": {
     "eyebrow": "What we do",
     "heading": "Our services",
-    "sub": "We are a leading company providing business consulting services. We customize our services to adapt to you and work as your partner. We \"simplify\" corporate processes to make them easy, clear and transparent. Main services: softlanding, legal, tax, financial, audit, payroll and foreign trade advisory.",
+    "sub": "We simplify your company's corporate processes. Explore each service area and discover the detail.",
+    "detailsLink": "View details",
+    "detailEyebrow": "Service detail",
+    "detailBack": "Back to services",
     "cta": {
       "title": "Do you need a customized service?",
       "sub": "We adapt to your company, industry and specific objectives.",
       "btn": "Talk to an expert"
     },
-    "items": {
-      "softlanding": {
-        "title": "Softlanding",
-        "desc": "Incorporation, training on local legal and tax regulations and regulatory compliance, headhunting and recruitment of local employees.",
-        "tag": "International"
+    "categories": [
+      {
+        "id": "financieros",
+        "title": "Financial Services",
+        "tag": "Financial",
+        "desc": "Accounting, controlling, invoicing, financial risks and tax to keep your finances clear and compliant.",
+        "items": [
+          { "title": "Accounting", "points": ["Monthly accounting services", "Electronic accounting", "Financial reports with company information", "Process implementation"] },
+          { "title": "Controlling", "points": ["Liquidity calculations", "Budget and forecasting", "Cost analysis and reduction"] },
+          { "title": "Invoicing", "points": ["Generation of customized invoices with client, product, service and price information", "Ensuring invoices comply with local tax regulations", "Electronic delivery of invoices to clients via email or platforms"] },
+          { "title": "Financial Risks", "points": ["Monthly and annual reviews", "Fraud detection", "Financial staff training", "Identification of improvement opportunities"] },
+          { "title": "Tax", "points": ["Monthly and annual tax calculations", "DIOT", "Electronic accounting", "Clarification of SAT requirements and internal audits, tax refund requests for favorable balances, transfer pricing", "D3 and D5 calculation", "All of the above for both individuals and legal entities"] }
+        ]
       },
-      "legales": {
-        "title": "Legal",
-        "desc": "Labor, Social Security, Corporate, Commercial, Civil, M&A, Immigration, Intellectual Property, Data Protection, Anti-Money Laundering and License & Permit Management.",
-        "tag": "Legal"
-      },
-      "contabilidad": {
-        "title": "Accounting",
-        "desc": "Monthly and Annual Tax Returns, Tax Procedures, General Advisory, Transfer Pricing, Controlling, Forecasting, Budget, Planning and Invoicing.",
-        "tag": "Tax"
-      },
-      "payroll": {
+      {
+        "id": "nomina",
         "title": "Payroll & Treasury",
-        "desc": "Payroll, Treasury (management of bank accounts in different currencies).",
-        "tag": "Finance"
+        "tag": "Payroll",
+        "desc": "End-to-end payroll and treasury management: onboarding, payroll calculation, taxes, IMSS, ISN, payments and online banking.",
+        "items": [
+          { "title": "Employee onboarding and offboarding", "points": ["Complete process of adding or removing employees from the company payroll"] },
+          { "title": "Salary modifications", "points": ["Increase or decrease of an employee's salary according to company specifications"] },
+          { "title": "Payroll calculation", "points": ["Complete process of calculating employee salaries and deductions according to general regulations"] },
+          { "title": "Severance and settlements", "points": ["Complete process of calculating and paying the amount due to an employee who retires or is dismissed"] },
+          { "title": "Risk premium calculation", "points": ["Complete process of calculating employee salaries and deductions to generate payroll"] },
+          { "title": "Tax calculation", "points": ["Calculation of the corresponding taxes payable on employee salaries"] },
+          { "title": "IMSS (Mexican Social Security Institute)", "points": ["Registration and calculation of the company's obligations before the IMSS"] },
+          { "title": "ISN (Payroll Tax)", "points": ["Payroll tax that employers must pay based on the total remuneration granted to their employees"] },
+          { "title": "Treasury", "points": ["Monitoring and forecasting of cash inflows and outflows to ensure the company has sufficient liquidity", "Generation of periodic reports showing the financial position and cash flows"] },
+          { "title": "Payments", "points": ["Review and scheduling of payments to suppliers", "Payroll payments", "Payments in different currencies"] },
+          { "title": "Online banking", "points": ["Operation of all online banking systems along with the services and products they manage", "Joint tokens to provide greater security in resource management"] }
+        ]
       },
-      "comercio": {
+      {
+        "id": "comercio",
         "title": "Foreign Trade",
-        "desc": "Tax and customs advisory in foreign trade. Solutions in international and business logistics, compliance with official standards, Data Stage audit, fixed asset control audit and diagnosis, preventive audit of foreign trade operations. Compliance with permits and non-tariff rules.",
-        "tag": "Trade"
+        "tag": "Trade",
+        "desc": "IMMEX, NOMs and permits, Data Stage audit, fixed-asset control, customs consulting and logistics process.",
+        "items": [
+          { "title": "Compliance with IMMEX program requirements", "points": [] },
+          { "title": "Compliance with Mexican Official Standards (NOMs), COFEPRIS and SEDENA permits", "points": [] },
+          { "title": "Audit through DATA STAGE", "points": ["Validation of recent and past operations", "Identification of unauthorized operations", "Preventive internal audits", "Preparation of documentation for VAT refunds", "Verification of information in specific annexes (Annex 24 and Annex 30)"] },
+          { "title": "Audit and diagnosis in fixed-asset control", "points": ["Reconciliation of orders and invoices", "Report of unidentified fixed assets", "Information verification", "File integration", "Results report"] },
+          { "title": "Preventive foreign trade audit", "points": ["Document review", "Diagnosis and opinion", "Opportunity detection", "Generation of alternatives", "Solution follow-up", "Continuous follow-up"] },
+          { "title": "Advisory and consulting on customs, tax and foreign trade matters", "points": ["Strategic planning", "Permanent consulting", "Legislative updates", "Follow-up of obligations", "File advisory", "Compliance with Rules of Origin"] },
+          { "title": "Logistics process", "points": ["Coordination with logistics providers, including transport and customs services", "Supervision of shipments throughout the delivery process", "Support to ensure customs compliance"] }
+        ]
       },
-      "auditoria": {
-        "title": "Audit",
-        "desc": "Financial Statement Audit, Tax Audit, International Financial Reporting Standards (IFRS).",
-        "tag": "Audit"
+      {
+        "id": "legales",
+        "title": "Legal Services",
+        "tag": "Legal",
+        "desc": "Corporate, labor, civil and commercial, immigration and intellectual property law to protect your company.",
+        "items": [
+          { "title": "Corporate Law", "points": ["Company incorporation", "Registration of permanent establishments and/or representative offices", "Compliance review", "REPSE registration", "Data protection", "RFC registration", "RNIE registration and notices", "IMSS registration", "Registration before the Ministry of Finance for ISN payment"] },
+          { "title": "Labor Law", "points": ["Individual contracts", "Collective contracts", "Administrative registrations", "Registration before INE and Fonacot", "Labor litigation and/or conciliation", "Employee settlement processes", "Benefits management: vouchers, insurance, savings funds, payroll cards"] },
+          { "title": "Civil and Commercial Law", "points": ["Drafting of contracts: service provision, purchase-sale, assignment and lease", "Debt letters, circumstantial letter", "Terms and conditions", "Confidentiality agreement", "Litigation"] },
+          { "title": "Immigration", "points": ["Employer certificate application", "Visa procedures: temporary and permanent", "Application for entry and exit permits", "Notice of any change in the foreigner's and/or company's situation"] },
+          { "title": "Intellectual Property", "points": ["Trademark registration", "Resolution of disputes over improper trademark use"] }
+        ]
       }
-    }
+    ]
   },
   "team": {
     "eyebrow": "Meet the team",

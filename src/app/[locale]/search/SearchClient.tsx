@@ -24,55 +24,20 @@ function buildIndex(
   tLang: ReturnType<typeof useTranslations>,
   tSearch: ReturnType<typeof useTranslations>,
 ): SearchItem[] {
+  const categories = tSvc.raw('categories') as { title: string; items: { title: string; points: string[] }[] }[]
+  const svcEntries: SearchItem[] = categories.flatMap((cat) =>
+    cat.items.map((item) => ({
+      title: item.title,
+      section: tSearch('svcLabel'),
+      sectionKey: 'svc' as const,
+      desc: item.points.join(' · ') || cat.title,
+      hash: 'servicios',
+      keywords: [item.title, cat.title, ...item.points].join(' '),
+    })),
+  )
+
   return [
-    {
-      title: tSvc('items.softlanding.title'),
-      section: tSearch('svcLabel'),
-      sectionKey: 'svc',
-      desc: tSvc('items.softlanding.desc'),
-      hash: 'servicios',
-      keywords: [tSvc('items.softlanding.title'), tSvc('items.softlanding.tag'), 'softlanding', 'empresa', 'expansion', 'headhunting', 'reclutamiento', 'constitución'].join(' '),
-    },
-    {
-      title: tSvc('items.legales.title'),
-      section: tSearch('svcLabel'),
-      sectionKey: 'svc',
-      desc: tSvc('items.legales.desc'),
-      hash: 'servicios',
-      keywords: [tSvc('items.legales.title'), tSvc('items.legales.tag'), 'legal', 'laboral', 'contrato', 'migracion', 'corporativo', 'propiedad intelectual', 'datos'].join(' '),
-    },
-    {
-      title: tSvc('items.contabilidad.title'),
-      section: tSearch('svcLabel'),
-      sectionKey: 'svc',
-      desc: tSvc('items.contabilidad.desc'),
-      hash: 'servicios',
-      keywords: [tSvc('items.contabilidad.title'), tSvc('items.contabilidad.tag'), 'contabilidad', 'impuestos', 'declaraciones', 'fiscal', 'facturacion', 'budget', 'forecast'].join(' '),
-    },
-    {
-      title: tSvc('items.payroll.title'),
-      section: tSearch('svcLabel'),
-      sectionKey: 'svc',
-      desc: tSvc('items.payroll.desc'),
-      hash: 'servicios',
-      keywords: [tSvc('items.payroll.title'), tSvc('items.payroll.tag'), 'payroll', 'nomina', 'salarios', 'treasury', 'tesoreria', 'divisas'].join(' '),
-    },
-    {
-      title: tSvc('items.comercio.title'),
-      section: tSearch('svcLabel'),
-      sectionKey: 'svc',
-      desc: tSvc('items.comercio.desc'),
-      hash: 'servicios',
-      keywords: [tSvc('items.comercio.title'), tSvc('items.comercio.tag'), 'comercio exterior', 'aduanas', 'logistica', 'importacion', 'exportacion', 'aranceles'].join(' '),
-    },
-    {
-      title: tSvc('items.auditoria.title'),
-      section: tSearch('svcLabel'),
-      sectionKey: 'svc',
-      desc: tSvc('items.auditoria.desc'),
-      hash: 'servicios',
-      keywords: [tSvc('items.auditoria.title'), tSvc('items.auditoria.tag'), 'auditoria', 'estados financieros', 'niif', 'ifrs', 'diagnostico'].join(' '),
-    },
+    ...svcEntries,
     {
       title: tAbout('mision.title') + ' & ' + tAbout('vision.title'),
       section: tSearch('aboutLabel'),
@@ -166,11 +131,9 @@ export default function SearchClient({ initialQuery }: { initialQuery: string })
     router.replace(`/search?q=${encodeURIComponent(term)}`)
   }
 
+  const svcCategories = tSvc.raw('categories') as { items: { title: string }[] }[]
   const suggestions = [
-    tSvc('items.softlanding.title'),
-    tSvc('items.legales.title'),
-    tSvc('items.contabilidad.title'),
-    tSvc('items.auditoria.title'),
+    ...svcCategories.flatMap((c) => c.items.slice(0, 1).map((i) => i.title)).slice(0, 4),
     tContact('heading'),
   ]
 

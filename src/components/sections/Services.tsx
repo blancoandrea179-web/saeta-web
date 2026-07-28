@@ -1,22 +1,26 @@
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import styles from './Services.module.css'
-import {
-  Scale, BarChart2, Globe, FileSearch,
-  TrendingUp, Layers, ArrowRight
-} from 'lucide-react'
+import { BarChart2, Wallet, Globe, Scale, ArrowRight } from 'lucide-react'
 
-const serviceKeys = ['softlanding', 'legales', 'contabilidad', 'payroll', 'comercio', 'auditoria'] as const
-const serviceIcons = [TrendingUp, Scale, BarChart2, Layers, Globe, FileSearch]
+interface Category {
+  id: string
+  title: string
+  tag: string
+  desc: string
+  items: { title: string; points: string[] }[]
+}
+
+const categoryIcons: Record<string, typeof BarChart2> = {
+  financieros: BarChart2,
+  nomina: Wallet,
+  comercio: Globe,
+  legales: Scale,
+}
 
 export default function Services() {
   const t = useTranslations('services')
-
-  const services = serviceKeys.map((key, i) => ({
-    icon: serviceIcons[i],
-    title: t(`items.${key}.title`),
-    desc:  t(`items.${key}.desc`),
-    tag:   t(`items.${key}.tag`),
-  }))
+  const categories = t.raw('categories') as Category[]
 
   return (
     <section id="servicios" className={`section section--gray ${styles.services}`}>
@@ -32,19 +36,29 @@ export default function Services() {
         </div>
 
         <div className={styles.grid}>
-          {services.map(({ icon: Icon, title, desc, tag }, i) => (
-            <div key={title} className={styles.card} style={{ animationDelay: `${i * 0.08}s` }}>
-              <div className={styles.cardTop}>
-                <div className={styles.iconBox}>
-                  <Icon size={24} />
+          {categories.map((cat, i) => {
+            const Icon = categoryIcons[cat.id] ?? BarChart2
+            return (
+              <Link
+                key={cat.id}
+                href={`/servicios/${cat.id}`}
+                className={styles.card}
+                style={{ animationDelay: `${i * 0.08}s` }}
+              >
+                <div className={styles.cardTop}>
+                  <div className={styles.iconBox}>
+                    <Icon size={24} />
+                  </div>
+                  <span className={styles.cardTag}>{cat.tag}</span>
                 </div>
-                <span className={styles.cardTag}>{tag}</span>
-              </div>
-              <h3 className={styles.cardTitle}>{title}</h3>
-              <p className={styles.cardDesc}>{desc}</p>
-              <button className={styles.cardLink} />
-            </div>
-          ))}
+                <h3 className={styles.cardTitle}>{cat.title}</h3>
+                <p className={styles.cardDesc}>{cat.desc}</p>
+                <span className={styles.cardLink}>
+                  {t('detailsLink')} <ArrowRight size={14} />
+                </span>
+              </Link>
+            )
+          })}
         </div>
 
         <div className={styles.ctaBanner}>

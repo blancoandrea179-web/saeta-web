@@ -45,44 +45,77 @@
   "services": {
     "eyebrow": "Lo que hacemos",
     "heading": "Nuestros servicios",
-    "sub": "Somos una empresa líder que brinda servicios de consultoría empresarial. Personalizamos nuestros servicios para adaptarnos a ti y funcionar como tu compañero. \"Descomplicamos\" los procesos corporativos para hacerlos fáciles, claros y transparentes. Los servicios principales que brindamos: softlanding, orientación legal, fiscal, financiera, auditora, payroll y comercio exterior.",
+    "sub": "Descomplicamos los procesos corporativos de tu empresa. Explora cada área de servicio y conoce el detalle.",
+    "detailsLink": "Ver detalles",
+    "detailEyebrow": "Detalle del servicio",
+    "detailBack": "Volver a servicios",
     "cta": {
       "title": "¿Necesitas un servicio personalizado?",
       "sub": "Nos adaptamos a tu empresa, industria y objetivos específicos.",
       "btn": "Habla con un experto"
     },
-    "items": {
-      "softlanding": {
-        "title": "Softlanding",
-        "desc": "Constitución, capacitaciones para la comprensión de regulaciones legales y fiscales locales y sobre el cumplimiento normativo, Headhunting y reclutamiento de empleados locales.",
-        "tag": "Internacional"
+    "categories": [
+      {
+        "id": "financieros",
+        "title": "Servicios Financieros",
+        "tag": "Financiero",
+        "desc": "Contabilidad, controlling, facturación, riesgos financieros y área fiscal para mantener tus finanzas claras y en cumplimiento.",
+        "items": [
+          { "title": "Contabilidad", "points": ["Servicios contables mensuales", "Contabilidad electrónica", "Informes financieros con información de la empresa", "Implementación de procesos"] },
+          { "title": "Controlling", "points": ["Cálculos de liquidez", "Presupuesto y pronósticos", "Análisis y reducción de costos"] },
+          { "title": "Facturación", "points": ["Generación de facturas personalizadas con información del cliente, productos, servicios y precios", "Garantizar que las facturas cumplan con las regulaciones fiscales locales", "Envío electrónico de facturas a clientes vía correo electrónico o mediante plataformas"] },
+          { "title": "Riesgos Financieros", "points": ["Revisiones mensuales y anuales", "Detección de fraudes", "Capacitación del personal financiero", "Identificación de oportunidades de mejora"] },
+          { "title": "Fiscal", "points": ["Cálculos fiscales mensuales y anuales", "DIOT", "Contabilidad electrónica", "Aclaración de requerimientos del SAT y auditorías internas, solicitudes de devolución de impuestos por saldos a favor, precios de transferencia", "Cálculo de D3 y D5", "Todo lo anterior tanto para personas físicas como morales"] }
+        ]
       },
-      "legales": {
-        "title": "Legales",
-        "desc": "Laboral, Seguridad Social, Corporativo, Mercantil, Civil, M&A, Migratorio, Propiedad Intelectual, Protección de Datos, Antilavado de Dinero y Gestión de Licencias y Permisos.",
-        "tag": "Legal"
+      {
+        "id": "nomina",
+        "title": "Nómina y Tesorería",
+        "tag": "Nómina",
+        "desc": "Gestión integral de nómina y tesorería: altas y bajas, cálculo de nómina, impuestos, IMSS, ISN, pagos y banca en línea.",
+        "items": [
+          { "title": "Altas y bajas de empleados", "points": ["Proceso completo de incorporación o baja de empleados de la nómina de la empresa"] },
+          { "title": "Modificaciones salariales", "points": ["Incremento o disminución del salario de un empleado conforme a las especificaciones de la empresa"] },
+          { "title": "Cálculo de nómina", "points": ["Proceso completo de cálculo de salarios y deducciones de los empleados conforme a la normativa general"] },
+          { "title": "Finiquitos y liquidaciones", "points": ["Proceso completo de cálculo y pago del monto correspondiente a un empleado que se jubila o es dado de baja"] },
+          { "title": "Cálculo de prima de riesgo", "points": ["Proceso completo de cálculo de salarios y deducciones de los empleados para generar la nómina"] },
+          { "title": "Cálculo de impuestos", "points": ["Cálculo del monto correspondiente de impuestos a pagar sobre los salarios de los empleados"] },
+          { "title": "IMSS (Instituto Mexicano del Seguro Social)", "points": ["Inscripción y cálculo de las obligaciones de la empresa ante el IMSS"] },
+          { "title": "ISN (Impuesto Sobre Nómina)", "points": ["Impuesto Sobre Nómina que los patrones deben pagar con base en la remuneración total que otorgan a sus empleados"] },
+          { "title": "Tesorería", "points": ["Monitoreo y pronóstico de entradas y salidas de efectivo para asegurar que la empresa cuente con suficiente liquidez", "Generación de reportes periódicos que muestren la posición financiera y los flujos de caja"] },
+          { "title": "Pagos", "points": ["Revisión y programación de pagos a proveedores", "Pagos de nómina", "Pagos en diferentes divisas"] },
+          { "title": "Banca en línea", "points": ["Operación de todos los sistemas de banca en línea junto con los servicios y productos que administran", "Tokens mancomunados para brindar mayor seguridad en la gestión de recursos"] }
+        ]
       },
-      "contabilidad": {
-        "title": "Contabilidad",
-        "desc": "Declaraciones Mensuales y Anuales, Trámites Fiscales, Asesoría General, Precios de Transferencia, Controlling, Forecasting, Budget, Planning y Facturación.",
-        "tag": "Fiscal"
-      },
-      "payroll": {
-        "title": "Payroll & Treasury",
-        "desc": "Nómina, Treasury (manejo de cuentas bancarias en distintas divisas).",
-        "tag": "Finanzas"
-      },
-      "comercio": {
+      {
+        "id": "comercio",
         "title": "Comercio Exterior",
-        "desc": "Asesoría en materia aduanera fiscal y de comercio exterior. Soluciones en logística internacional y empresarial, cumplimiento con normas oficiales, auditoría por Data Stage, auditoría y diagnóstico en el control de los activos fijos, auditoría preventiva de operaciones de comercio exterior. Cumplimiento de permisos y reglas no arancelaria.",
-        "tag": "Comercio"
+        "tag": "Comercio",
+        "desc": "IMMEX, NOMs y permisos, auditoría Data Stage, control de activos fijos, consultoría aduanera y proceso logístico.",
+        "items": [
+          { "title": "Cumplimiento con los requisitos del programa IMMEX", "points": [] },
+          { "title": "Cumplimiento con Normas Oficiales Mexicanas (NOMs), permisos COFEPRIS y SEDENA", "points": [] },
+          { "title": "Auditoría mediante DATA STAGE", "points": ["Validación de operaciones recientes y pasadas", "Identificación de operaciones no autorizadas", "Auditorías internas preventivas", "Preparación de documentación para devolución de IVA", "Verificación de información en anexos específicos (Anexo 24 y Anexo 30)"] },
+          { "title": "Auditoría y diagnóstico en el control de activos fijos", "points": ["Conciliación de órdenes y facturas", "Reporte de activos fijos no identificados", "Verificación de información", "Integración de expedientes", "Informe de resultados"] },
+          { "title": "Auditoría preventiva de Comercio Exterior", "points": ["Revisión de documentos", "Diagnóstico y dictamen", "Detección de oportunidades", "Generación de alternativas", "Seguimiento de soluciones", "Seguimiento continuo"] },
+          { "title": "Asesoría y consultoría en materia aduanera, fiscal y de comercio exterior", "points": ["Planeación estratégica", "Consultoría permanente", "Actualización legislativa", "Seguimiento de obligaciones", "Asesoría en expedientes", "Cumplimiento de Reglas de Origen"] },
+          { "title": "Proceso logístico", "points": ["Coordinación con proveedores logísticos, incluyendo servicios de transporte y aduanas", "Supervisión de envíos durante todo el proceso de entrega", "Apoyo para garantizar el cumplimiento aduanero"] }
+        ]
       },
-      "auditoria": {
-        "title": "Auditoría",
-        "desc": "Auditoría de Estados Financieros, Auditoría para efectos fiscales, Normas Internacionales de Información Financiera.",
-        "tag": "Auditoría"
+      {
+        "id": "legales",
+        "title": "Servicios Legales",
+        "tag": "Legal",
+        "desc": "Derecho corporativo, laboral, civil y mercantil, migratorio y propiedad intelectual para proteger a tu empresa.",
+        "items": [
+          { "title": "Derecho Corporativo", "points": ["Constitución de empresas", "Registro de establecimientos permanentes y/o oficinas de representación", "Revisión de cumplimiento", "Registro ante el REPSE", "Protección de datos", "Registro en el RFC", "Registro y avisos al RNIE", "Registro ante el IMSS", "Registro ante la Secretaría de Finanzas para el pago del ISN"] },
+          { "title": "Derecho Laboral", "points": ["Contratos individuales", "Contratos colectivos", "Registros administrativos", "Registro ante el INE y Fonacot", "Litigio y/o Conciliación Laboral", "Procesos de liquidación de empleados", "Administración de prestaciones: Vales, Seguros, Fondos de ahorro, Tarjetas de nómina"] },
+          { "title": "Derecho Civil y Mercantil", "points": ["Elaboración de contratos: Prestación de servicios, Compra-venta, Cesión y Arrendamiento", "Cartas de deuda, Carta circunstanciada", "Términos y condiciones", "Acuerdo de confidencialidad", "Litigio"] },
+          { "title": "Migratorio", "points": ["Solicitud de Constancia de Empleador", "Trámite de visas: Temporal y Permanente", "Solicitud de permisos de entrada y salida del país", "Aviso de cualquier cambio en la situación del extranjero y/o la empresa"] },
+          { "title": "Propiedad Intelectual", "points": ["Registro de marcas", "Resolución de disputas por uso indebido de marcas"] }
+        ]
       }
-    }
+    ]
   },
   "team": {
     "eyebrow": "Conoce al equipo",

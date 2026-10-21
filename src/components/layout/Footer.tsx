@@ -70,7 +70,7 @@ export default function Footer() {
           <div style={{ marginTop: '24px' }}>
             <h4 className={styles.colTitle}>{t('contacto')}</h4>
             <a href="tel:+522225339586" className={styles.contactText}>+52 222 533 9586</a>
-            <a href="mailto:contacto@saetaoc.com" className={styles.contactText}>contacto@saetaoc.com</a>
+            <a href="mailto:contact@saetaoc.com" className={styles.contactText}>contact@saetaoc.com</a>
           </div>
         </div>
 

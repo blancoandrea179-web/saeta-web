@@ -30,7 +30,7 @@ export default function Cookies() {
       <p>SAETA Orientación Corporativa, S.C. se reserva el derecho de modificar esta Política de Cookies en cualquier momento. Las modificaciones serán publicadas en esta misma página.</p>
 
       <h2 style={{ fontWeight: 700, marginTop: '32px', marginBottom: '12px' }}>Contacto</h2>
-      <p>Si tienes dudas sobre nuestra Política de Cookies, puedes contactarnos en: <strong>contacto@saetaoc.com</strong></p>
+      <p>Si tienes dudas sobre nuestra Política de Cookies, puedes contactarnos en: <strong>contact@saetaoc.com</strong></p>
 
       <div style={{ marginTop: '48px' }}>
         <a href="/" style={{ color: '#D7DF23', fontWeight: 700, textDecoration: 'none' }}>← Volver al inicio</a>

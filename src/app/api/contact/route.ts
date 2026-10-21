@@ -9,7 +9,7 @@ export async function POST(req: Request) {
 
   await resend.emails.send({
     from: 'SAETA Web <onboarding@resend.dev>',
-    to: 'contact@saetaoc.com',
+    to: 'contacto@saetaoc.com',
     subject: `Nueva consulta de ${nombre}`,
     html: `
       <h2>Nueva solicitud de contacto</h2>

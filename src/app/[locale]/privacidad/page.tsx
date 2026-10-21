@@ -24,7 +24,7 @@ export default function Privacidad() {
 
       <p style={{ marginTop: '20px' }}>Los Datos Personales proporcionados a <strong>SAETA ORIENTACIÓN CORPORATIVA, S.C.</strong> se encontrarán debidamente protegidos a través de medidas de seguridad tecnológica, física y administrativa, previniendo el uso o divulgación indebida de los mismos.</p>
 
-      <p style={{ marginTop: '20px' }}>El Titular podrá en cualquier momento revocar el consentimiento que ha otorgado a "El Responsable" para el tratamiento de sus Datos Personales, limitar el uso o divulgación de los mismos, así como ejercer sus derechos de Acceso, Rectificación, Cancelación y Oposición (Derechos ARCO) previstos en la Ley, mediante el envío de su solicitud a través del correo electrónico: <strong>contact@saetaoc.com</strong></p>
+      <p style={{ marginTop: '20px' }}>El Titular podrá en cualquier momento revocar el consentimiento que ha otorgado a "El Responsable" para el tratamiento de sus Datos Personales, limitar el uso o divulgación de los mismos, así como ejercer sus derechos de Acceso, Rectificación, Cancelación y Oposición (Derechos ARCO) previstos en la Ley, mediante el envío de su solicitud a través del correo electrónico: <strong>contacto@saetaoc.com</strong></p>
 
       <p style={{ marginTop: '20px' }}>Nos queda reservado el derecho de efectuar, en cualquier tiempo, modificaciones o actualizaciones al presente aviso de privacidad. Las modificaciones que se efectúen se pondrán a disposición del público a través de anuncios visibles en nuestros establecimientos, o vía nuestra página de internet.</p>
 

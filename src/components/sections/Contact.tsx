@@ -45,7 +45,7 @@ export default function Contact() {
             <div className={styles.contacts}>
               {[
                 { icon: Phone,  label: t('phone'), value: '+52 222 533 9586',         href: 'tel:+522225339586' },
-                { icon: Mail,   label: t('email'), value: 'contac@saetaoc.com',     href: 'mailto:contac@saetaoc.com' },
+                { icon: Mail,   label: t('email'), value: 'contact@saetaoc.com',     href: 'mailto:contact@saetaoc.com' },
                 { icon: MapPin, label: 'Puebla',   value: 'Corporativo Alsur Av. Atlixcayotl 6518 Int. 8 Col. Lomas de Angelopolis C.P. 72830 San Andrés Cholula, Puebla.', href: 'https://share.google/6cWT8k3yhZEQN7io6' },
                 { icon: MapPin, label: 'CDMX',     value: 'German Centre Av. Santa Fe 170 Int. 1-2-04 Col. Lomas de Santa Fe C.P. 01376',                                  href: 'https://share.google/ChHKSUTG89EqnNaqa' },
               ].map(({ icon: Icon, label, value, href }) => (
